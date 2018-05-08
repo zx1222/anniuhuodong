@@ -1,0 +1,437 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: runyuan;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+  outline: 0;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+
+//动画开始
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn .4s linear 1;
+  -webkit-animation: fadeIn .4s linear 1;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+@keyframes slideUp {
+  from {
+    top:32%
+  }
+
+  to {
+    top:15%
+  }
+}
+
+.slideUp {
+  animation: slideUp .4s linear 1;
+  -webkit-animation: slideUp .4s linear 1;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+@keyframes slideDown {
+  from {
+    top:15%
+  }
+
+  to {
+    top:32%
+  }
+}
+
+.slideDown {
+  animation: slideDown .4s linear 1;
+  -webkit-animation: slideDown .4s linear 1;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+@keyframes twinkle {
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: .4;
+  }
+  100% {
+    opacity:1;
+  }
+}
+.twinkle {
+  animation: twinkle 1.4s linear infinite;
+  -webkit-animation: twinkle 1.4s linear infinite;
+}
+//动画结束
+//logo
+.logo {
+  position: absolute;
+  width: 60%;
+  left: 20%;
+  top: 3%;
+  z-index: 2;
+}
+
+.swiper-container, .swiper-wrapper, .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+
+//首页
+.cover {
+  background: url("../images/bg01.jpg") no-repeat;
+  background-size: cover;
+  img {
+    position: absolute;
+    &:nth-child(2) {
+      width: 42%;
+      left: 13%;
+      top: 13%;
+    }
+    &:nth-child(3) {
+      width: 16%;
+      left: 59%;
+      top: 25%;
+    }
+    &:nth-child(4) {
+      width: 50%;
+      left: 26%;
+      top: 63%;
+    }
+    &:nth-child(5) {
+      width: 26%;
+      right: 5%;
+      top: 13%;
+    }
+    &:nth-child(6) {
+      width: 30%;
+      left: 2%;
+      top: 50%;
+    }
+    &:nth-child(7) {
+      width: 22%;
+      left: 39%;
+      bottom: 10%;
+    }
+    &:nth-child(8) {
+      width: 30%;
+      left: 35%;
+      bottom: 6%;
+    }
+    &:nth-child(9) {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 3;
+    }
+    &:nth-child(10) {
+      width: 56%;
+      left: 22%;
+      top: 70%;
+      z-index: 4;
+    }
+  }
+}
+
+//題目
+.questions {
+  background: url("../images/bg02.jpg") no-repeat;
+  background-size: cover;
+  color: #333333;
+  //题目
+  .questionIndex{
+    position: absolute;
+    width: 34%;
+    left: 33%;
+    top: 18%;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  .question-content{
+    overflow: hidden;
+    .title{
+      width: 48%;
+      margin-left: 26%;
+      margin-top: 42%;
+      font-size: 16px;
+      text-align: center;
+    }
+    .author{
+      width: 48%;
+      margin-left: 26%;
+      margin-top: 1%;
+      font-size: 14px;
+      text-align: center;
+      color: #666;
+    }
+    .question {
+      width: 48%;
+      margin-left: 26%;
+      margin-top: 2%;
+      font-size: 20px;
+      text-align: center;
+      padding-left: 8px;
+      p:not(:nth-child(1)){
+        margin-top: -20px;
+      }
+    }
+    //选项
+    .options {
+      width: 46%;
+      margin-left: 27%;
+      position: relative;
+      text-align: center;
+      font-size: 20px;
+      .option {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: 20px 0px;
+        padding-left: 10px;
+        text-align: center;
+        p{
+          width: 84%;
+          margin-left: 16%;
+          text-align: left;
+        }
+        .marquee{
+          position: absolute;
+          width: 8%;
+          left: 8%;
+          top: 8px
+        }
+        .select {
+          position: absolute;
+          width: 6%;
+          left: 9%;
+          top: 8px
+        }
+      }
+    }
+  }
+
+  .shade {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  //一关没过
+  .shade-noChance {
+    background: url("../images/shade-noChance.png") no-repeat;
+    background-size: cover;
+    .btn-tryAgain {
+      position: absolute;
+      width: 38%;
+      left: 31%;
+      top: 58%
+    }
+  }
+  //过当前关卡
+  .shade-passOne {
+    background: url("../images/shade-passOne.png") no-repeat;
+    background-size: cover;
+    p {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      font-size: 28px;
+      color: #d14b3e;
+      letter-spacing: 2px;
+      &:nth-child(1) {
+        top: 31%;
+      }
+      &:nth-child(2) {
+        top: 36%;
+      }
+    }
+    .btn-continuePlay {
+      position: absolute;
+      width: 38%;
+      left: 32%;
+      top: 58%
+    }
+  }
+  //答错 但是有抽奖机会
+  .shade-hasChance {
+    background: url("../images/shade-hasChance.png") no-repeat;
+    background-size: cover;
+  }
+  //全部通关
+  .shade-passAll {
+    background: url("../images/shade-passAll.png") no-repeat;
+    background-size: cover;
+  }
+  .shade-hasChance,.shade-passAll{
+    a {
+      position: absolute;
+      width: 38%;
+      left: 31%;
+      top: 58%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+//抽奖
+.lottery .swiper-slide:nth-child(1) {
+  background: url("../images/bg03.jpg") no-repeat;
+  background-size: cover;
+  .turntable{
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    top:11%;
+    z-index: 2;
+  }
+  .turntable-icon{
+    position: absolute;
+    width: 14%;
+    left: 43%;
+    top: 29%;
+    z-index: 2;
+  }
+  .turntable-label{
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    top: 32%;
+    img{
+      width: 100%;
+    }
+    .btn-draw{
+      position: absolute;
+      width: 42%;
+      bottom: 16%;
+      left: 29%;
+    }
+    .lotteryCount{
+      position: absolute;
+      top: 46.5%;
+      left: 25%;
+      font-size: 44px;
+      color: #f15847;
+    }
+  }
+  .shade {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  //中奖
+  .shade-win{
+    background: url("../images/shade-prize.png") no-repeat;
+    background-size: cover;
+    p{
+      width: 100%;
+      text-align: center;
+      color: #333333;
+      font-size: 24px;
+      position: absolute;
+      top: 45%;
+      letter-spacing: 2px;
+      padding-left: 10px;
+    }
+  }
+  //没中奖
+  .shade-noWin{
+    background: url("../images/shade-noPrize.png") no-repeat;
+    background-size: cover;
+  }
+  .btn-continueDraw{
+    position: absolute;
+    width: 36%;
+    left: 33%;
+    top:56%;
+  }
+  //已中奖抽奖机会用尽
+  .shade-chanceEnd1>img,.shade-chanceEnd0>img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+  }
+  .shade-chanceEnd1>img.close,.shade-chanceEnd0>img.close{
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: 28%;
+    right: 12%;
+  }
+}
+.lottery .swiper-slide:nth-child(2) {
+  background: url("../images/bg04.jpg") no-repeat;
+  background-size: cover;
+  >img{
+    position: absolute;
+    &:nth-child(2){
+      width: 70%;
+      left: 15%;
+      bottom: 16%;
+    }
+    &:nth-child(3){
+      width: 32%;
+      left: 15%;
+      bottom: 8%;
+    }
+    &:nth-child(4),&:nth-child(5){
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top:0;
+      z-index: 3;
+    }
+  }
+  a{
+    position: absolute;
+    width: 32%;
+    right: 15%;
+    bottom: 8%;
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+  .close{
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: 28%;
+    right: 12%;
+    z-index: 3;
+  }
+}

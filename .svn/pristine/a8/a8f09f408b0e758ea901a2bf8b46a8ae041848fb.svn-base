@@ -1,0 +1,251 @@
+/**
+ * Created by Miinno-13 on 2018/1/18.
+ */
+$(function () {
+    $('body').height($('body')[0].clientHeight);
+
+    //开始游戏
+    $('.btn-start').on('click', function () {
+        $('.page').addClass('none');
+        $('.page2').removeClass('none');
+    });
+    //关闭规则
+    $('.regulation .btn-close').on('click', function () {
+        $('.regulation').addClass('none');
+        setTimeout(function () {
+            gameStartFn()
+        }, 200)
+
+    });
+
+    var _arr_num = ['+10', '+5', '+5', '+2', '+2', '-3', '-5'],
+        _arr_add = [2, 3, 3, 4, 5, 7, 7, 8, 9],//递增关卡
+        _arr_an = ['txy3', 'txy4', 'txy5', 'txy6', 'txy7', 'txy8', 'txy9', 'txy10', 'txy11', 'txy10'],
+        _add_lv = 15,//关卡升级系数
+        _arrLis = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
+        _cound = 0,//分数值
+        _addNum = 0,//目前血压增加值
+        _speed = 400,//时间系数
+        _timer = null,
+        _timeNum = 0,//当前秒数
+        _lis = $('.lisCon em'),
+        _lisLen = _lis.length,
+        _maxCound = 100,//最大分值 超过不加但可向下减
+        _minCound = 0,//最小分值
+        _limitTime = 20
+
+    function timerStart() {
+        _cound = 0;
+        _addNum = 0;
+        _timeNum = 0;
+        _timer = setInterval(function () {
+            _timeNum++;
+            $('.countdown').text(_limitTime - _timeNum + 's')
+            for (var i = 0; i < _lisLen; i++) {
+                if ((_lis.eq(i).attr('data-time') > 0 ) && (_timeNum - (_lis.eq(i).attr('data-time')) > 6)) {
+                    _arrLis.push(i);
+                    _lis.eq(i).attr({
+                        'data-num': ' ',
+                        'data-time': ' ',
+                        'class': ' '
+                    });
+                }
+                ;
+            }
+            ;
+            var _eq = Math.floor(Math.random() * _arrLis.length);
+            var _n = Math.floor(Math.random() * 8), _class = 'type' + (_n + 1);
+            _lis.eq(_arrLis[_eq]).attr({
+                'data-num': _arr_num[_n],
+                'data-time': _timeNum
+            });
+            _lis.eq(_arrLis[_eq]).addClass(_class + ' ' + _arr_an[Math.floor(_cound / _add_lv) > 9 ? 9 : Math.floor(_cound / _add_lv)] + ' ' + (_n < 5 ? 'colorSub' : 'colorAdd' ));
+            _arrLis.splice(_eq, 1);
+
+            if (_timeNum % 2 == 0) {
+                _addNum += _arr_add[Math.floor(_cound / _add_lv) > 9 ? 9 : Math.floor(_cound / _add_lv)];
+            }
+            ;
+            //时间倒计时
+            if (_timeNum >= _limitTime) {
+                gameEndFn()
+            }
+        }, _speed);
+    }
+
+    //游戏结束
+    function gameEndFn() {
+        $('.lisCon').addClass('none')
+        clearInterval(_timer);
+        // $('.pg3').addClass('none');
+        // $('.pg4_cound, .pg5_num').html(_cound);
+        if (_cound <= 20) {
+            $('.mask-noWin .result_num').text(_cound + '得分');
+            $('.mask-noWin').removeClass('none');
+        } else {
+            $('.mask-win .result_num').text(_cound + '得分');
+            $('.mask-win').removeClass('none');
+        }
+        var csrfToken = $('meta[name="csrf-token"]').attr("content");
+
+        // $.ajax({
+        //     type: 'POST',
+        //     url: '{$ajaxScoreUrl}',
+        //     dataType: 'json',
+        //     data: {_csrf: csrfToken, score: _cound},
+        //     cache: false,
+        //     error: function () {
+        //     },
+        //     success: function (json) {
+        //
+        //     }
+        // });
+    }
+
+    //游戏开始
+    function gameStartFn() {
+        timerStart();
+    }
+
+    _lis.on('touchstart', function () {
+        if (!$(this).hasClass('ck')) {
+            var _index = $(this).index(),
+                _nu = parseInt($(this).attr('data-num'));
+
+            $(this).addClass('ck');
+            _addNum += parseInt($(this).attr('data-num'));
+            console.log('_cound:' + _cound);
+            console.log('_nu:' + _nu);
+            console.log(_maxCound);
+            //规定最大分值及最小分值 超过不能再增加只能向下减 也不能低于0
+            if (_nu < 0 && _cound + _nu > _minCound) {
+                console.log('a');
+                $('.game_num span').html(_cound += _nu)
+            }
+            else if (_nu < 0 && _cound + _nu <= _minCound) {
+                console.log('b');
+                _cound = _minCound;
+                $('.game_num span').html(_cound)
+            }
+            else if (_nu < 0 && _cound == _maxCound) {
+                console.log('c');
+                $('.game_num span').html(_cound += _nu)
+            }
+            else if (_nu > 0 && _cound + _nu >= _maxCound) {
+                console.log('d');
+                _cound = _maxCound;
+                $('.game_num span').html(_maxCound)
+            }
+            else if (_nu > 0 && _cound + _nu < _maxCound) {
+                console.log('e');
+                $('.game_num span').html(_cound += _nu);
+            }
+        }
+        ;
+    });
+
+
+    //未过关 点击是
+    $('.btn-yes').on('click', function () {
+        $('.mask').addClass('none');
+        window.location.reload();
+    });
+
+    //过关点击去抽奖
+    $('.btn-toDraw').on('click', function () {
+        $('.mask').addClass('none');
+        $('.mask-turntable').show();
+    });
+
+    //点击抽奖
+    $('.btn-draw').on('click', function () {
+        lottery()
+    });
+
+    //点击提交
+    $('.btn-submit').on('click', function () {
+        var data = {
+            user_name: $("input[name='user_name']").val(),
+            user_phone: $("input[name='user_phone']").val(),
+            user_address: $("input[name='user_address']").val()
+        };
+        if (checkInfo(data)) {
+            $.ajax({
+                url: '',
+                data: data,
+                success: function () {
+
+                }
+            })
+        }
+
+    });
+
+    //提交成功关闭
+    $('.mask-submitok .btn-close').on('click', function () {
+        $('.page').addClass('none');
+        $('.page3').removeClass('none');
+    });
+
+    //点击了解阿胶
+    $('.btn-ejiao').on('click', function () {
+        $('.mask-ejiao').removeClass('none');
+    });
+
+    //点击分享
+    $('.btn-share').on('click', function () {
+        $('.mask-share').removeClass('none');
+    });
+
+    //点击关闭了解阿胶二维码
+    $('.mask-ejiao .btn-close').on('click', function () {
+        $(this).parent('.mask').addClass('none')
+    });
+
+    //关闭分享蒙层
+    $('.mask-share').on('click', function () {
+        $(this).addClass('none');
+    });
+});
+function lottery() {
+    var _speed = 400;//越小越快
+    var _loopNum = 2//转圈次数
+    var _currentNum = 1;
+    var _timer = setInterval(function () {
+        var _prizeList = [1, 2, 3, 4, 5, 6, 7, 8];
+        if (_currentNum <= _loopNum * _prizeList.length) {
+            _currentNum++;
+            if (_currentNum % _prizeList.length != 0 && _currentNum % _prizeList.length != 1) {
+                $('.pri').removeClass('active');
+                $('.pri' + _currentNum % _prizeList.length + '').addClass('active');
+            }
+            else if (_currentNum % _prizeList.length == 0) {
+                $('.pri').removeClass('active');
+                $('.pri8').addClass('active');
+            }
+            else {
+                $('.pri').removeClass('active');
+                $('.pri1').addClass('active');
+            }
+        }
+        else {
+            clearInterval(_timer)
+        }
+    }, _speed)
+}
+
+function checkInfo(data) {
+    var phoneCheck = /^1[3|4|5|7|8][0-9]{9}$/;
+    if (data.user_name == '') {
+        alert('请输入收件人');
+    }
+    else if (data.user_phone == '') {
+        alert('请输入电话');
+    }
+    else if (!phoneCheck.test(data.user_phone)) {
+        alert('请输入正确手机号');
+    }
+    else if (data.user_address == '') {
+        alert('请输入地址');
+    }
+}

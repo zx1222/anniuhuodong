@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>阿胶母亲节</title>
+    <meta name="viewport"
+          content="width=device-width,user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1,viewport-fit=auto">
+    <!--强制竖屏-->
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="x5-page-mode" content="app">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/index.min.css">
+</head>
+<body>
+<div class="mask mask-verification">
+    <div class="container">
+        <div id="captcha" style="position: relative"></div>
+        <div id="msg"></div>
+    </div>
+</div>
+
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide p1 none">
+            <img class="logo" src="assets/images/logo.png">
+            <img class="p11 ani" swiper-animate-effect="bounceInDown" swiper-animate-duration=".8s"
+                 src="assets/images/p1-1.png">
+            <img class="p12 ani" swiper-animate-effect="bounceInDown" swiper-animate-duration=".8s"
+                 swiper-animate-delay=".2s" src="assets/images/p1-2.png">
+            <img class="btn-rule ani" swiper-animate-effect="bounceInUp" swiper-animate-duration=".8s"
+                 swiper-animate-delay=".2s" src="assets/images/btn-rule.png">
+            <div class="mask-rule mask none">
+                <img class="panel-rule" src="assets/images/p1-3.png">
+                <img class="btn-start" src="assets/images/btn-start.png">
+            </div>
+        </div>
+        <div class="swiper-slide p2 none">
+            <img class="logo" src="assets/images/logo.png">
+            <img class="slogan slogan1" src="assets/images/slogan1.png">
+            <img class="slogan slogan2 none" src="assets/images/slogan2.png">
+            <img class="slogan slogan3 none" src="assets/images/slogan3.png">
+
+            <p class="countdown">倒计时: <span class="countdown-num"></span>秒</p>
+            <div class="card-container">
+                <div class="card-wrp">
+                    <div class="card-front">
+                        <img src="assets/images/card-front.png">
+                    </div>
+                    <div class="card-back">
+                        <!--<img src="">-->
+                    </div>
+                </div>
+                <div class="card-wrp">
+                    <div class="card-front">
+                        <img src="assets/images/card-front.png">
+                    </div>
+                    <div class="card-back">
+                        <img src="">
+                    </div>
+                </div>
+                <div class="card-wrp">
+                    <div class="card-front">
+                        <img src="assets/images/card-front.png">
+                    </div>
+                    <div class="card-back">
+                        <img src="">
+                    </div>
+                </div>
+                <div class="card-wrp">
+                    <div class="card-front">
+                        <img src="assets/images/card-front.png">
+                    </div>
+                    <div class="card-back">
+                        <img src="">
+                    </div>
+                </div>
+                <div class="card-wrp">
+                    <div class="card-front">
+                        <img src="assets/images/card-front.png">
+                    </div>
+                    <div class="card-back">
+                        <img src="">
+                    </div>
+                </div>
+                <div class="card-wrp">
+                    <div class="card-front">
+                        <img src="assets/images/card-front.png">
+                    </div>
+                    <div class="card-back">
+                        <img src="">
+                    </div>
+                </div>
+                <div class="card-wrp">
+                    <div class="card-front">
+                        <img src="assets/images/card-front.png">
+                    </div>
+                    <div class="card-back">
+                        <img src="">
+                    </div>
+                </div>
+                <div class="card-wrp">
+                    <div class="card-front">
+                        <img src="assets/images/card-front.png">
+                    </div>
+                    <div class="card-back">
+                        <img src="">
+                    </div>
+                </div>
+                <div class="card-wrp">
+                    <div class="card-front">
+                        <img src="assets/images/card-front.png">
+                    </div>
+                    <div class="card-back">
+                        <img src="">
+                    </div>
+                </div>
+                <div class="card-wrp">
+                    <div class="card-front">
+                        <img src="assets/images/card-front.png">
+                    </div>
+                    <div class="card-back">
+                        <img src="">
+                    </div>
+                </div>
+                <div class="card-wrp">
+                    <div class="card-front">
+                        <img src="assets/images/card-front.png">
+                    </div>
+                    <div class="card-back">
+                        <img src="">
+                    </div>
+                </div>
+                <div class="card-wrp">
+                    <div class="card-front">
+                        <img src="assets/images/card-front.png">
+                    </div>
+                    <div class="card-back">
+                        <img src="">
+                    </div>
+                </div>
+            </div>
+            <p class="leaveGroup">还剩<span class="leaveGroup-num"> 6 </span>对</p>
+            <div class="mask mask-passOne none">
+                <img class="panel-passOne " src="assets/images/panel-level1.png">
+                <img class="btn-nextLevel" src="assets/images/btn-nextLevel.png">
+                <img class="btn-toDraw none" src="assets/images/btn-toLottery.png">
+            </div>
+            <div class="mask mask-notPass none">
+                <img class="panel-notPass" src="assets/images/panel-notPass.png">
+                <img class="btn-giveUpChance" src="assets/images/btn-giveUpChance.png">
+                <img class="btn-playAgain" src="assets/images/btn-playAgain.png">
+            </div>
+        </div>
+        <div class="swiper-slide p3 ">
+            <!--<div class="mask">-->
+                <!--<div class="container">-->
+                    <!--<div id="captcha" style="position: relative"></div>-->
+                    <!--<div id="msg"></div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <img class="logo" src="assets/images/logo.png">
+            <div class="turntable-panel">
+                <div class="top">
+                    <div class="pri1 pri"><img class="active" src="assets/images/prize2.png"></div>
+                    <div class="pri2 pri"><img src="assets/images/prize5.png"></div>
+                    <div class="pri3 pri"><img src="assets/images/prize3.png"></div>
+                </div>
+                <div class="middle">
+                    <div class="pri8 pri"><img src="assets/images/prize4.png"></div>
+                    <div class="pri"><img src=""></div>
+                    <div class="pri4 pri"><img src="assets/images/prize4.png"></div>
+                </div>
+                <div class="bottom">
+                    <div class="pri7 pri"><img src="assets/images/prize1.png"></div>
+                    <div class="pri6 pri"><img src="assets/images/prize5.png"></div>
+                    <div class="pri5 pri"><img src="assets/images/prize6.png"></div>
+                </div>
+            </div>
+            <img class="btn-lottery" src="assets/images/btn-lottery.png">
+
+            <!--中奖-->
+            <div class="mask mask-win none">
+                <img class="panel-win" src="assets/images/panel-win.png">
+                <img class="btn-toForm" src="assets/images/btn-toForm.png">
+                <img class="prize-img" src="assets/images/pri3.png">
+                <p class="prize-name">500g同仁堂阿胶一盒</p>
+            </div>
+            <!--未中奖-->
+            <div class="mask mask-notWin none">
+                <img class="panel-notWin" src="assets/images/panel-noWin.png">
+                <img class="btn-giveUpChance" src="assets/images/btn-giveUpChance.png">
+                <img class="btn-reStart" src="assets/images/btn-reStart.png">
+
+            </div>
+            <!--form-->
+            <div class="mask-form mask none">
+                <img class="panel-form" src="assets/images/panel-form.png">
+                <img class="btn-submit" src="assets/images/btn-submit.png">
+                <form>
+                    <input type="text" name="user_name" placeholder="姓名">
+                    <input type="number" name="user_phone" placeholder="手机号">
+                    <textarea name="user_address" placeholder="快递可送达地址"></textarea>
+                </form>
+            </div>
+            <div class="mask-submitOk mask none">
+                <img class="panel-submitOk" src="assets/images/panel-submitOk.png">
+                <img class="code" src="assets/images/code.png">
+                <img class="close" src="assets/images/icon-close.png">
+            </div>
+            <div class="mask-code mask none">
+                <img class="panel-giveUp" src="assets/images/panel-giveUp.png">
+                <img class="code" src="assets/images/code.png">
+                <img class="close" src="assets/images/icon-close.png">
+            </div>
+
+        </div>
+        <div class="swiper-slide p4">
+            <img class="logo" src="assets/images/logo.png">
+            <img class="p4-1" src="assets/images/p4.png">
+            <img class="btn-ejiao" src="assets/images/btn-ejiao.png">
+            <img class="btn-share" src="assets/images/btn-share.png">
+
+            <div class="mask mask-ejiao none">
+                <img class="panel-ejiao" src="assets/images/panel-ejiao.png">
+                <img class="code" src="assets/images/code.png">
+                <img class="close" src="assets/images/icon-close.png">
+            </div>
+            <div class="mask mask-share none">
+                <img src="assets/images/icon_share.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/jquery-2.1.4.min.js"></script>
+<script src="assets/js/swiper.min.js"></script>
+<script src="assets/js/swiper.animate1.0.2.min.js"></script>
+<script src="assets/js/common.js"></script>
+<script src="assets/js/verification.js"></script>
+<script src="assets/js/index.js"></script>
+
+
+</body>
+</html>

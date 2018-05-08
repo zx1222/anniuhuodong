@@ -1,0 +1,540 @@
+* {
+  font-family: "微软雅黑", 'Microsoft YaHei', "SimSun", Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  color: #333;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, label, form, fieldset, legend, input, button, textarea, p, section, blockquote, th, td, strong, a {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.none {
+  display: none;
+}
+
+.dbw {
+  display: block;
+  width: 100%;
+}
+
+.page {
+  width: 100%;
+  min-height: 100%;
+  //overflow: hidden;
+}
+
+//首页
+.page1 {
+  background: url("../images/p1.jpg") no-repeat;
+  background-size: cover;
+  .btn-start {
+    position: absolute;
+    width: 48%;
+    left: 26%;
+    bottom: 7%;
+  }
+}
+
+.logo {
+  position: absolute;
+  width: 36%;
+  left: 32%;
+  top: 2%;
+  z-index: 2;
+}
+
+//游戏
+@keyframes txy1key {
+  0% {
+    -webkit-transform: translateY(0%);
+    opacity: 1;
+  }
+  99% {
+    -webkit-transform: translateY(-600%);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-600%);
+    opacity: 0;
+  }
+}
+
+.page2 {
+  img {
+    position: absolute;
+  }
+  .regulation {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background: rgba(10, 10, 10, .4);
+    .panel-regulation {
+      width: 100%;
+      top: 7%;
+    }
+    .btn-close {
+      width: 7%;
+      right: 4%;
+      top: 3%;
+    }
+  }
+  .p22 {
+    width: 100%;
+    height: 88%;
+    top: 0;
+  }
+  .p23 {
+    width: 100%;
+    height: 12%;
+    bottom: 0;
+  }
+  .lisCon {
+    .countdown {
+      position: absolute;
+
+    }
+    em {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 18%;
+      height: 4.35rem;
+      transition: opacity .2s linear;
+      background-size: 100% 100%;
+    }
+    .colorAdd {
+      color: #fc122e;
+    }
+
+    .colorSub {
+      color: #08c46e;
+    }
+    .ck {
+      opacity: 0;
+    }
+    .ck:after {
+      content: attr(data-num);
+      position: absolute;
+      top: -.8rem;
+      left: .9rem;
+      width: 1.35rem;
+      height: .4rem;
+      line-height: .4rem;
+      font-size: 1.2rem;
+      text-align: center;
+      font-weight: bold;
+    }
+    .type1 {
+      background-image: url('../images/lis1.png');
+    }
+
+    .type2 {
+      background-image: url('../images/lis2.png');
+    }
+
+    .type3 {
+      background-image: url('../images/lis3.png');
+    }
+
+    .type4 {
+      background-image: url('../images/lis4.png');
+    }
+
+    .type5 {
+      background-image: url('../images/lis5.png');
+    }
+
+    .type6 {
+      background-image: url('../images/lis6.png');
+    }
+  }
+  .lisCon em:nth-child(1),
+  .lisCon em:nth-child(2),
+  .lisCon em:nth-child(3),
+  .lisCon em:nth-child(4),
+  .lisCon em:nth-child(5) {
+    left: 10%;
+  }
+
+  .lisCon em:nth-child(6),
+  .lisCon em:nth-child(7),
+  .lisCon em:nth-child(8),
+  .lisCon em:nth-child(9),
+  .lisCon em:nth-child(10) {
+    left: 41%;
+  }
+  .lisCon em:nth-child(11),
+  .lisCon em:nth-child(12),
+  .lisCon em:nth-child(13),
+  .lisCon em:nth-child(14) {
+    left: 72%;
+  }
+  .lisCon .txy1 {
+    -webkit-animation: txy1key 2.2s cubic-bezier(0.7, 0, 1, 1.01) forwards;
+    -webkit-transform-origin: 50% 50%;
+    animation: txy1key 3s cubic-bezier(0.7, 0, 1, 1.01) forwards;
+    transform-origin: 50% 50%;
+  }
+
+  .lisCon .txy2 {
+    -webkit-animation: txy1key 1.8s cubic-bezier(0.7, 0, 1, 1.01) forwards;
+    -webkit-transform-origin: 50% 50%;
+    animation: txy1key 2.7s cubic-bezier(0.7, 0, 1, 1.01) forwards;
+    transform-origin: 50% 50%;
+  }
+
+  .lisCon .txy3 {
+    -webkit-animation: txy1key 1.5s cubic-bezier(0.7, 0, 1, 1.01) forwards;
+    -webkit-transform-origin: 50% 50%;
+    animation: txy1key 2.4s cubic-bezier(0.7, 0, 1, 1.01) forwards;
+    transform-origin: 50% 50%;
+  }
+
+  .lisCon .txy4 {
+    -webkit-animation: txy1key 1.3s cubic-bezier(0.7, 0, 1, 1.01) forwards;
+    -webkit-transform-origin: 50% 50%;
+    animation: txy1key 2.1s cubic-bezier(0.7, 0, 1, 1.01) forwards;
+    transform-origin: 50% 50%;
+  }
+
+  .lisCon .txy5 {
+    -webkit-animation: txy1key 1.2s cubic-bezier(0.7, 0, 1, 1.01) forwards;
+    -webkit-transform-origin: 50% 50%;
+    animation: txy1key 1.8s cubic-bezier(0.7, 0, 1, 1.01) forwards;
+    transform-origin: 50% 50%;
+  }
+
+  .lisCon .txy6 {
+    -webkit-animation: txy1key 1.1s cubic-bezier(0.7, 0, 1, 1.01) forwards;
+    -webkit-transform-origin: 50% 50%;
+    animation: txy1key 1.6s cubic-bezier(0.7, 0, 1, 1.01) forwards;
+    transform-origin: 50% 50%;
+  }
+
+  .lisCon .txy7 {
+    -webkit-animation: txy1key 1s cubic-bezier(0.7, 0, 1, 1.01) forwards;
+    -webkit-transform-origin: 50% 50%;
+    animation: txy1key 1.4s cubic-bezier(0.7, 0, 1, 1.01) forwards;
+    transform-origin: 50% 50%;
+  }
+
+  .lisCon .txy8 {
+    -webkit-animation: txy1key .9s cubic-bezier(0.7, 0, 1, 1.01) forwards;
+    -webkit-transform-origin: 50% 50%;
+    animation: txy1key 1.2s cubic-bezier(0.7, 0, 1, 1.01) forwards;
+    transform-origin: 50% 50%;
+  }
+
+  .lisCon .txy9 {
+    -webkit-animation: txy1key 0.8s cubic-bezier(0.7, 0, 1, 1.01) forwards;
+    -webkit-transform-origin: 50% 50%;
+    animation: txy1key 1.1s cubic-bezier(0.7, 0, 1, 1.01) forwards;
+    transform-origin: 50% 50%;
+  }
+
+  .lisCon .txy10 {
+    -webkit-animation: txy1key 0.5s cubic-bezier(0.7, 0, 1, 1.01) forwards;
+    -webkit-transform-origin: 50% 50%;
+    animation: txy1key 1s cubic-bezier(0.7, 0, 1, 1.01) forwards;
+    transform-origin: 50% 50%;
+  }
+  .countdown {
+    font-size: 34px;
+    position: absolute;
+    top: 2%;
+    left: 3%;
+    color: #fff;
+  }
+  .game_num {
+    font-size: 26px;
+    position: absolute;
+    width: 120px;
+    top: 11%;
+    background: #e03d21;
+    padding: 0 10px;
+    box-sizing: border-box;
+    left: ~'calc(50% - 55px)';
+    color: #fff;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: 500;
+    span {
+      font-size: 28px;
+    }
+  }
+  .mask {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 3;
+    background: rgba(10, 10, 10, .4);
+    .btn-close {
+      width: 7%;
+      right: 7%;
+      top: 18%;
+    }
+  }
+  //未过关
+  .mask-noWin {
+    .panel-noWin {
+      width: 80%;
+      left: 10%;
+      top: 26%;
+    }
+    .result_num {
+      position: absolute;
+      font-size: 26px;
+      width: 100%;
+      text-align: center;
+      top: 36.5%;
+    }
+    .btn-yes {
+      width: 29%;
+      top: 66%;
+      left: 12%;
+    }
+    .btn-no {
+      width: 29%;
+      top: 66%;
+      right: 12%;
+    }
+  }
+
+  //机会用尽
+  .mask-noChance {
+    .panel-noChance {
+      width: 80%;
+      left: 10%;
+      top: 23%;
+    }
+    .code {
+      width: 28%;
+      left: 36%;
+      top: 44%;
+    }
+  }
+
+  //过关
+  .mask-win {
+    .panel-win {
+      width: 80%;
+      left: 10%;
+      top: 27%;
+    }
+    .result_num {
+      position: absolute;
+      font-size: 26px;
+      width: 100%;
+      text-align: center;
+      top: 42.5%;
+    }
+    .btn-toDraw {
+      width: 29%;
+      top: 66%;
+      right: 12%;
+    }
+  }
+
+  //抽奖
+  .mask-turntable {
+    .turntable {
+      width: 86%;
+      left: 7%;
+      top: 23%;
+    }
+    .turntable-panel {
+      position: relative;
+      width: 75%;
+      margin-left: 12.5%;
+      margin-top: 43%;
+      height: 310px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      border-radius: 17px;
+      overflow: hidden;
+      .top, .middle, .bottom {
+        width: 100%;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        & > div {
+          flex: 1;
+          height: 100%;
+          box-shadow: 0 0 0 3px #ffa300 inset;
+          border-radius: 15px;
+          overflow: hidden;
+          box-sizing: border-box;
+          padding: 3px;
+          background-origin: content-box;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          img {
+            flex: 1;
+            width: 55%;
+          }
+        }
+        & > div.pri2, & > div.pri8 {
+          img {
+            width: 69%;
+          }
+        }
+        & > div.pri4 {
+          img {
+            width: 94%;
+          }
+        }
+        & > div.pri6 {
+          img {
+            width: 61%;
+          }
+        }
+        & > div.btn-draw {
+          img {
+            width: 94%;
+          }
+        }
+        & > div.pri {
+          background: url("../images/pri-bg2.png") no-repeat;
+          background-size: cover;
+        }
+        & > div.pri.active {
+          background: url("../images/pri-bg1.png") no-repeat;
+          background-size: cover;
+        }
+      }
+    }
+  }
+
+  //奖品
+  .mask-prize {
+    .panel-prize {
+      width: 80%;
+      left: 10%;
+      top: 20%;
+    }
+    .btn-get {
+      width: 29%;
+      right: 14%;
+      top: 68%;
+    }
+    .prize-name {
+      position: absolute;
+      top: 32%;
+      width: 100%;
+      text-align: center;
+      color: #be1b00;
+      font-size: 30px;
+    }
+    .prize {
+      width: 52%;
+      left: 24%;
+      top: 39%;
+    }
+  }
+
+  //领奖信息
+  .mask-info {
+    .panel-info {
+      width: 80%;
+      left: 10%;
+      top: 20%;
+    }
+    .btn-submit {
+      width: 29%;
+      right: 14%;
+      top: 72%;
+    }
+    form{
+      position: relative;
+      width: 56%;
+      height: 200px;
+      margin-left: 22%;
+      margin-top:67%;
+      input{
+        width: 100%;
+        box-sizing: border-box;
+        border:1px solid #be1b00;
+        border-radius: 6px;
+        margin-bottom: 17px;
+        padding: 6px 10px;
+      }
+    }
+  }
+
+  //领取成功
+  .mask-submitok{
+    .panel-submitok {
+      width: 88%;
+      left: 6%;
+      top: 25%;
+    }
+    .code{
+      width: 30%;
+      left: 35%;
+      top: 45%;
+    }
+  }
+}
+
+.page3{
+  background: url("../images/p3.jpg") no-repeat;
+  background-size: cover;
+  img{
+    position: absolute;
+  }
+  .btn-ejiao{
+    width: 31%;
+    left: 13%;
+    bottom: 15%;
+  }
+  .btn-share{
+    width: 31%;
+    right: 13%;
+    bottom: 15%;
+  }
+  .mask {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 3;
+    background: rgba(10, 10, 10, .4);
+    .btn-close {
+      width: 7%;
+      right: 7%;
+      top: 18%;
+    }
+  }
+  .code{
+    width: 52%;
+    left: 24%;
+    top:29%;
+  }
+  .icon-share{
+    width: 18%;
+    right: 7%;
+    top:3%;
+  }
+}
+

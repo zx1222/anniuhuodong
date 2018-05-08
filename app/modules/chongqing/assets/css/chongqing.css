@@ -1,0 +1,281 @@
+body{
+    position: relative;
+    background-color: #a60512;
+    -moz-transition:all .5s; /* Firefox 4 */
+    -webkit-transition:all .5s; /* Safari and Chrome */
+    -o-transition:all .5s; /* Opera */
+    margin: 0;
+    padding: 0;
+}
+.main-center,.wrapper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.u-pageLoading{
+    height: 100%;
+    width: 100%;
+}
+.u-pageLoading img{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 25%;
+}
+@-webkit-keyframes twinkling{   /*透明度由0到1*/
+    50%{
+        opacity:.1; /*透明度为0*/
+    }
+    100%{
+        opacity:1; /*透明度为1*/
+    }
+}
+@-moz-keyframes twinkling{   /*透明度由0到1*/
+    50%{
+        opacity:.1; /*透明度为0*/
+    }
+    100%{
+        opacity:1; /*透明度为1*/
+    }
+}
+@-o-keyframes twinkling{   /*透明度由0到1*/
+    50%{
+        opacity:.1; /*透明度为0*/
+    }
+    100%{
+        opacity:1; /*透明度为1*/
+    }
+}
+.main-size{
+    width: 100%;
+    height:100%;
+}
+.main-bg-red{
+    background-color:#a60512;
+}
+.main-01,
+.main-02{
+    position: relative;
+}
+.index{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.main-logo{
+    padding: 15px;
+    width: 30%;
+}
+.main-01-span{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    display: inline-block;
+    padding:5px 15px;
+    color: #FFF;
+    font-weight: bold;
+    letter-spacing:3px;
+    background-color: #ae1127;
+    border-radius: 5px;
+    font-size: 0.8em;
+}
+.index-center{
+    position: absolute;
+    top: 0;
+}
+.index-center img{
+    width: 65%;
+}
+.index-center img+img{
+    width: 70%;
+    margin-top: 5%;
+}
+.index-bottom{
+    position: absolute;
+    bottom: 0;
+}
+.index-qr{
+    background:rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+}
+.index-qr img{
+    width: 90%;
+    margin-left: 5%;
+    margin-top:20%;
+    border-radius: 15px;
+}
+.index-04{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 90%;
+}
+/*活动规则*/
+.rule{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.rule-img-01{
+    padding: 0 15px;
+    width: 35%;
+}
+.rule-img-logo{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 15px;
+    width: 40%;
+}
+.rule-img-02{
+    padding-top: 20%;
+    width: 70%;
+}
+.rule-text{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 90%;
+    margin-right:auto;
+    margin-left: auto;
+}
+.rule-img-red{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50%;
+}
+/*第二部分*/
+.award{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.award-text-00{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 23%;
+}
+.award-text-01,
+.award-text-03{
+    width: 73%;
+    margin-bottom: 2%;
+}
+.award-text-02{
+    width: 60%;
+    margin-bottom: 2%;
+}
+.award-bottom{
+    position: absolute;
+    bottom: 0;
+}
+.award-text-05{
+    width:80%
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.footer-arrow{
+    position: absolute;
+    bottom: 5%;
+    left: 43%;
+    right: 0;
+    width: 14%;
+}
+.award-text-07{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 60%;
+}
+/*轮盘抽奖*/
+.turntable{
+    height: 100%;
+}
+.turntable-main{
+    position: relative;
+    height: 100%;
+}
+.turntable-img-01{
+    position: absolute;
+    width: 80%;
+    margin:auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+}
+.turntable-img-02{
+    position: absolute;
+    width: 20%;
+    margin:auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+/*中奖页面*/
+.award-main{
+    height: 100%;
+}
+.award-main form{
+    position: absolute;
+    margin: 0 auto;
+    width: 70%;
+    left: 0;
+    right: 0;
+    top: 61%;
+}
+.award-main form input{
+    border-radius: 0;
+
+}
+.award-main form .btn-default{
+    padding: 0;
+    background-color: transparent;
+    border: transparent;
+    width: 50%;
+    margin: 5% auto;
+    display: block;
+}
+.award-main form .btn-default img{
+    width: 50%;
+}
+.award-01,.award-02,.award-03,.award-04,.award-05,.award-06,.award-07{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.voucher{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+.nothave-img{
+    width: 80%;
+}
+/*已抽过红包弹窗*/
+.partake{
+    position: absolute;
+    top: 0;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.aaaabbbb{
+    transform:translate(0,-100%);
+}
+.endpage{
+    height: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}

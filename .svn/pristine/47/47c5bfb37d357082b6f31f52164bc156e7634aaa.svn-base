@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>安牛元旦</title>
+    <meta name="viewport"
+          content="width=device-width,user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <!--强制竖屏-->
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="x5-page-mode" content="app">
+
+    <link rel="stylesheet" href="assets/css/index.min.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+
+</head>
+<body>
+<div class="swiper-container">
+    <div class="swiper-slide turntable" style="display: none">
+        <img class="logo" src="assets/images/logo.png">
+        <img class="turntable-panel" src="assets/images/turntable.png">
+        <img class="btn-draw" src="assets/images/turntable-icon.png">
+    </div>
+    <div class="swiper-slide prize" style="display: none">
+        <div class="win">
+            <h3 class="text-pink text-xbmy title">恭喜您获得</h3>
+            <div class="prize1">
+                <img class="prize-product" src="assets/images/prize1.png">
+                <h3 class="text-center text-pink prize-name text-xbmy">果丹皮一袋</h3>
+            </div>
+            <div class="prize2" style="display: none">
+                <img class="prize-product" src="assets/images/prize2.png">
+                <h3 class="text-center text-pink prize-name text-xbmy">阿胶糕一盒</h3>
+            </div>
+            <div class="prize3" style="display: none">
+                <img class="prize-product" src="assets/images/prize3.png">
+                <h3 class="text-center text-pink prize-name text-xbmy">阿胶250g一盒</h3>
+            </div>
+            <div class="prize4" style="display: none">
+                <img class="prize-product" src="assets/images/prize3.png">
+                <h3 class="text-center text-pink prize-name text-xbmy">阿胶500g一盒</h3>
+            </div>
+            <img class="btn-get" src="assets/images/btn-get.png">
+        </div>
+        <div class="noWin">
+            <h3 class="text-pink text-xbmy title text-center">祝福礼</h3>
+            <h4 class="text-center text-xbmy sub-title">2018建议</h4>
+            <h5 class="text-xbmy content1 content"style="display: none">不要总嘲笑上一辈人这么爱看养生，是因为他们已经开始感到体力不支~2018年多关心父母的身体健康……</h5>
+            <h5 class="text-xbmy content2 content" style="display: none">做人要做听从自己的内心，做真正让自己快乐的事 …但前提是有助于健康的事。</h5>
+            <h5 class="text-xbmy content3 content">新的一年，不期待突如其来的好运，只希望所有的努力终有回报…尤其是在减肥和健身这种事上！</h5>
+            <img class="code" src="assets/images/code.jpg">
+            <p class="text-center">扫码持续关注活动</p>
+        </div>
+    </div>
+    <div class="swiper-slide form">
+        <p class="text-pink text-xbmy title text-center">请输入快递可送达的地址</p>
+        <form>
+            <input type="text" placeholder="收件人" name="user_name">
+            <input type="text" placeholder="电话" name="user_phone">
+            <input type="text" placeholder="地址" name="user_address">
+            <img class="btn-submit" src="assets/images/btn-submit.png">
+        </form>
+    </div>
+</div>
+
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.rotate.min.js"></script>
+<script src="assets/js/jquery.parallax.min.js"></script>
+<script src="assets/js/swiper.min.js"></script>
+<script src="assets/js/index.js"></script>
+</body>
+</html>

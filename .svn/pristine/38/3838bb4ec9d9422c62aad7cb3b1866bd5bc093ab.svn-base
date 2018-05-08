@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>安牛元旦</title>
+    <meta name="viewport"
+          content="width=device-width,user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1,viewport-fit=cover"">
+    <!--强制竖屏-->
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="x5-page-mode" content="app">
+
+    <link rel="stylesheet" href="assets/css/index.min.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+
+</head>
+<body>
+<div class="index">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img class="logo" src="assets/images/logo.png">
+                <ul id="scene1">
+                    <li class="layer" data-depth="0.8"><img class="clould1" src="assets/images/clould1.png"></li>
+                    <li class="layer" data-depth="0.7"><img class="clould2" src="assets/images/clould2.png"></li>
+                    <li class="layer" data-depth="0.6"><img class="flower1" src="assets/images/flower7.png"></li>
+                    <li class="layer" data-depth="0.8"><img class="flower3" src="assets/images/flower6.png"></li>
+                    <li class="layer" data-depth="0.5"><img class="flower2" src="assets/images/flower2.png"></li>
+                    <li class="layer" data-depth="0.8"><img class="flower4" src="assets/images/flower3.png"></li>
+                    <li class="layer" data-depth="0.4"><img class="flower5" src="assets/images/flower4.png"></li>
+                    <li class="layer" data-depth="0.7"><img class="flower6" src="assets/images/flower8.png"></li>
+                    <li class="layer" data-depth="0.8"><img class="flower7" src="assets/images/flower3.png"></li>
+                    <li class="layer" data-depth="0.7"><img class="flower8" src="assets/images/flower1.png"></li>
+                </ul>
+                <img class="tree" src="assets/images/tree.png">
+                <img class="card-bg" src="assets/images/card-bg.png">
+                <img class="product" src="assets/images/product.png">
+                <div class="text">
+                    <div class="l">
+                        <p class="text-xbmy s1 text-l3 ">2018的</p>
+                        <p class="text-blue text-xbmy s2 text-l2">第一份</p>
+                    </div>
+                    <p class="text-pink text-xbmy text-l1 r">好礼</p>
+                </div>
+                <p class="text-xbmy s3">辛苦一年，是时候滋补一下了！</p>
+                <img class="icon-up shaking" src="assets/images/icon-up.png">
+            </div>
+            <div class="swiper-slide">
+                <img class="logo" src="assets/images/logo.png">
+                <ul id="scene2">
+                    <li class="layer" data-depth="0.5"><img class="clould1" src="assets/images/clould1.png"></li>
+                    <li class="layer" data-depth="0.7"><img class="clould2" src="assets/images/clould2.png"></li>
+                    <li class="layer" data-depth="0.6"><img class="clould3" src="assets/images/clould1.png"></li>
+                    <li class="layer" data-depth="0.3"><img class="flower1" src="assets/images/flower7.png"></li>
+                    <li class="layer" data-depth="0.6"><img class="flower2" src="assets/images/flower6.png"></li>
+                    <li class="layer" data-depth="0.1"><img class="flower3" src="assets/images/flower8.png"></li>
+                    <li class="layer" data-depth="0.4"><img class="flower4" src="assets/images/flower4.png"></li>
+                    <li class="layer" data-depth="0.3"><img class="flower5" src="assets/images/flower8.png"></li>
+                    <li class="layer" data-depth="0.2"><img class="flower6" src="assets/images/flower3.png"></li>
+                    <li class="layer" data-depth="0.3"><img class="flower7" src="assets/images/flower1.png"></li>
+                </ul>
+                <img class="envelope" src="assets/images/envelope.png">
+                <img class="envelope-inner" src="assets/images/envelope-inner.png">
+                <img class="btn-click" src="assets/images/btn-click.png">
+                <img class="lace-l" src="assets/images/lace-l.png">
+                <img class="lace-r" src="assets/images/lace-r.png">
+                <img class="clould4" src="assets/images/clould3.png">
+            </div>
+            <div class="swiper-slide turntable" style="display: none">
+                <img class="logo" src="assets/images/logo.png">
+                <img class="turntable-panel" src="assets/images/turntable.png">
+                <img class="btn-draw" src="assets/images/turntable-icon.png">
+            </div>
+            <div class="swiper-slide prize" style="display: none">
+                <img class="logo" src="assets/images/logo.png">
+                <div class="win">
+                    <h3 class="text-pink text-xbmy title">恭喜您获得</h3>
+                    <div class="prize1">
+                        <img class="prize-product" src="assets/images/prize1.png">
+                        <h3 class="text-center text-pink prize-name text-xbmy">果丹皮一袋</h3>
+                    </div>
+                    <div class="prize2" style="display: none">
+                        <img class="prize-product" src="assets/images/prize2.png">
+                        <h3 class="text-center text-pink prize-name text-xbmy">阿胶糕一盒</h3>
+                    </div>
+                    <div class="prize3" style="display: none">
+                        <img class="prize-product" src="assets/images/prize3.png">
+                        <h3 class="text-center text-pink prize-name text-xbmy">阿胶250g一盒</h3>
+                    </div>
+                    <div class="prize4" style="display: none">
+                        <img class="prize-product" src="assets/images/prize3.png">
+                        <h3 class="text-center text-pink prize-name text-xbmy">阿胶500g一盒</h3>
+                    </div>
+                    <img class="btn-get" src="assets/images/btn-get.png">
+                </div>
+                <div class="noWin">
+                    <h3 class="text-pink text-xbmy title text-center">祝福礼</h3>
+                    <h4 class="text-center text-xbmy sub-title">2018建议</h4>
+                    <h5 class="text-xbmy content1 content"style="display: none">不要总嘲笑上一辈人这么爱看养生，是因为他们已经开始感到体力不支~2018年多关心父母的身体健康……</h5>
+                    <h5 class="text-xbmy content2 content" style="display: none">做人要做听从自己的内心，做真正让自己快乐的事 …但前提是有助于健康的事。</h5>
+                    <h5 class="text-xbmy content3 content">新的一年，不期待突如其来的好运，只希望所有的努力终有回报…尤其是在减肥和健身这种事上！</h5>
+                    <img class="code" src="assets/images/code.jpg">
+                    <p class="text-center">扫码持续关注活动</p>
+                    <img class="btn-close" src="assets/images/btn-close.png">
+                </div>
+            </div>
+            <div class="swiper-slide form" style="display: none">
+                <img class="logo" src="assets/images/logo.png">
+                <p class="text-pink text-xbmy title text-center">请输入快递可送达的地址</p>
+                <form>
+                    <input type="text" placeholder="收件人" name="user_name">
+                    <input type="text" placeholder="电话" name="user_phone">
+                    <input type="text" placeholder="地址" name="user_address">
+                    <img class="btn-submit" src="assets/images/btn-submit.png">
+                </form>
+            </div>
+            <div class="swiper-slide submitOK">
+                <img class="logo" src="assets/images/logo.png">
+                <h3 class="text-pink text-xbmy title text-center">提交成功</h3>
+                <img class="code" src="assets/images/code.jpg">
+                <h3 class="text-xbmy text-center">新年礼正在路上<br>扫码关注活动</h3>
+            </div>
+            <div class="swiper-slide backcover">
+                <img class="logo" src="assets/images/logo.png">
+                <img class="card-bg" src="assets/images/card-bg2.png">
+                <p class="text-center text-xbmy text-pink s1">您健康<br> 家人才快乐！</p>
+                <p class="text-center text-xbmy s2">2018，继续加油！</p>
+                <img class="product" src="assets/images/product.png">
+                <img class="btn-ejiao" src="assets/images/btn-ejiao.png">
+                <img class="btn-share" src="assets/images/btn-share.png">
+                <img class="mask-share transition" src="assets/images/mask-share.png"
+                     style="display: none">
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.rotate.min.js"></script>
+<script src="assets/js/jquery.parallax.min.js"></script>
+<script src="assets/js/swiper.min.js"></script>
+<script src="assets/js/index.js"></script>
+<script>
+    $('#scene1').parallax({
+        calibrateX: false,
+        calibrateY: true,
+        invertX: false,
+        invertY: true,
+        limitX: false,
+        limitY: 10,
+        scalarX: 2,
+        scalarY: 8,
+        frictionX: 0.2,
+        frictionY: 0.8
+    });
+    $('#scene2').parallax()
+    $('.packet-header-front').click(function () {
+        $('.packet-header').addClass('flipped')
+    })
+</script>
+
+
+</body>
+</html>

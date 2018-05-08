@@ -1,0 +1,318 @@
+body
+{
+    position: fixed;
+
+    overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+}
+@-webkit-keyframes twinkling
+{
+    /*透明度由0到1*/
+
+    0%
+    {
+        opacity: .6; /*透明度为1*/
+    }
+    50%
+    {
+        opacity: .2; /*透明度为1*/
+    }
+    100%
+    {
+        opacity: .6; /*透明度为1*/
+    }
+}
+
+.u-pageLoading
+{
+    width: 100%;
+    height: 100%;
+}
+.u-pageLoading img
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 25%;
+    margin: auto;
+}
+.logo{
+    position: fixed;
+    top:3.3167vh;
+    left:3.3167vh;
+    z-index: 99;
+    width:35.406vh;
+}
+img{
+    width:100%;
+}
+.wrapper
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+}
+.page
+{
+    position: relative;
+
+    overflow: hidden;
+
+    height: 100%;
+
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% 100%;
+}
+.page img
+{
+    -webkit-transition-duration: 2s; /* Safari 和 Chrome */
+       -moz-transition-duration: 2s; /* Firefox 4 */
+         -o-transition-duration: 2s;
+            transition-duration: 2s;
+}
+.page1
+{
+   
+}
+.activity-rule-btn{
+    position: absolute;
+    top:4.975vh;
+    right:3.3167vh;
+    width:8.291vh;
+}
+.home-img{
+    position: absolute;
+    top:9.867vh;
+    right:0;
+    left:0;
+    margin:0 auto;
+    width:52.6533vh;
+}
+.eggs-bg{
+    position: absolute;
+    top:55.058vh;
+    right:0;
+    left:0;
+    margin:0 auto;
+    width:62.189vh;
+    max-width: 100%;
+}
+.egg{
+    position: absolute;
+    top:62.189vh;
+    width:31.011vh;
+}
+.egg-left{
+    left:40%;
+}
+.egg-right{
+    right:40%;
+}
+.activity-rule-detail-img{
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    margin:auto;
+    width:59.535vh;
+    max-width: 90%;
+}
+.activity-rule-detail-btn{
+    position: absolute;
+    top:66vh;
+    right:0;
+    left:0;
+    margin:0 auto;
+    width:20.714vh;
+}
+.page2
+{
+   
+}
+
+.receive-award-text{
+    position: absolute;
+    bottom:7.048vh;
+    right:0;
+    left:0;
+    margin:0 auto;
+    width: 23.88vh;
+}
+.receive-award{
+    position: absolute;
+    bottom:11.608vh;
+    right:0;
+    left:0;
+    margin:0 auto;
+    width: 23.88vh;
+}
+.crack-egg-ico{
+    position: absolute;
+    bottom:25.456vh;
+    right:0;
+    left:0;
+    margin:0 auto;
+    width: 39.22vh;
+}
+.crack-egg{
+    position: absolute;
+    bottom:25.456vh;
+    right:0;
+    left:0;
+    margin:0 auto;
+    width: 22.056vh;
+}
+.hammer{
+    position: absolute;
+    bottom:33vh;
+    left:60%;
+    width: 11.608vh;
+
+}
+.crack-egg-lighting{
+    position: absolute;
+    bottom:35.489vh;
+    right:0;
+    left:0;
+    margin:0 auto;
+    width: 34.577vh;
+
+    transform: scale(.1,.1) translateY(100vh);
+    transition: transform 1s ease 0s;
+}
+.award-size{
+    position: absolute;
+    bottom:51.326vh;
+    right:0;
+    left:0;
+    margin:0 auto;
+    width: 36.733vh;
+
+    transform: scale(.01,.1) translateY(300vh);
+    transition: transform .8s ease .6s;
+}
+.page3{
+
+}
+.qr-code{
+    position: absolute;
+    top:18vh;
+    right:0;
+    left:0;
+    margin:0 auto;
+    width: 36.733vh;
+}
+.qr-code-text-size{
+    position: absolute;
+    top:65vh;
+    right:0;
+    left:0;
+    margin:0 auto;
+    width: 36.733vh;
+
+}
+.qr-code-close{
+    position: absolute;
+    top:90vh;
+    right:0;
+    left:0;
+    margin:0 auto;
+    width: 5.887vh;
+}
+.page4{
+
+}
+.last-page-title{
+    position: absolute;
+    top: 13.598vh;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 52.653vh;
+}
+.last-page-img{
+    position: absolute;
+    top: 38.308vh;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 56.799vh;
+    max-width: 100%;
+}
+.anniu-btn{
+    position: absolute;
+    top: 71vh;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 23.714vh;
+}
+.share-btn{
+    position: absolute;
+    top: 80vh;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 23.714vh;
+}
+.post-a-bg{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,.5);
+    z-index: 999;
+}
+.share-detail-img{
+    position: absolute;
+    top:6vh;
+    right:1vh;
+    width:45vh;
+}
+.receive-award-again-last{
+
+    position: absolute;
+    top: 89vh;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 23.714vh;
+}
+.shake{
+    -webkit-animation:shakeegg .8s infinite ease-in-out;
+    -o-animation:shakeegg .8s infinite ease-in-out;
+    animation:shakeegg .8s infinite ease-in-out;
+    margin-top: 100px;
+}
+@keyframes shakeegg {
+    0%{
+        transform: rotateZ(5deg) translateY(-100px);
+    }
+
+    50%{
+        transform: rotateZ(-5deg) translateY(-100px);
+    }
+
+    100%{
+        transform: rotateZ(5deg) translateY(-100px);
+    }
+}
+
+.award-animation .crack-egg-lighting{
+    transform: scale(1,1);
+}
+.award-animation .award-size{
+    transform: scale(1,1);
+}

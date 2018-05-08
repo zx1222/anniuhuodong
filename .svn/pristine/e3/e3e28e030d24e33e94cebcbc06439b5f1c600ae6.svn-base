@@ -1,0 +1,600 @@
+body{
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	position: fixed;
+	background-color: #feff60;
+	margin: 0;
+}
+.main-center{
+	width: 100%;
+	height: 100%;
+}
+.logo{
+	position: fixed;
+	top: 15px;
+	right: 15px;
+	z-index: 9;
+	width: 35%;
+}
+.u-pageLoading{
+	height: 100%;
+	width: 100%;
+}
+.u-pageLoading img{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	width: 25%;
+}
+.wrapper,
+.wrapper-answer{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0%;
+}
+.page{
+	background-color: #feff60;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.page img{
+	transition-duration: 4s;
+	-moz-transition-duration: 4s; /* Firefox 4 */
+	-webkit-transition-duration: 4s; /* Safari 和 Chrome */
+	-o-transition-duration: 4s;
+}
+.page-text{
+	width: 80%;
+	position: absolute;
+	top: 5%;
+	left: 10%;
+	opacity: 0;
+}
+.page-img{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+.page7-text.page-text{
+	width: 90%;
+	position: absolute;
+	top: 10%;
+	left: 5%;
+}
+.page7-img.page-img{
+	width: 100%;
+	position: absolute;
+	bottom: 8%;
+}
+.page8-title{
+	position: absolute;
+	width: 85%;
+	top: 15%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+.page8-btn{
+	position: absolute;
+	width: 45%;
+	bottom: 15%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+.page-answer-img{
+	width: 80%;
+	position: absolute;
+	top: 15%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+.page .radio{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+label.page-input{
+	width: 65%;
+	left:32%;
+}
+.page9-input-01{
+	position: absolute;
+	top: 53%;
+	left: 35%;
+}
+
+.page9-input-02{
+	position: absolute;
+	top: 62%;
+	left: 35%;
+}
+.page10-input-01{
+	position: absolute;
+	top: 48%;
+	left: 35%;
+}
+.page10-input-02{
+	position: absolute;
+	top: 56%;
+	left: 35%;
+}
+.page11-input-01{
+	position: absolute;
+	top: 48%;
+	left: 35%;
+}
+.page11-input-02{
+	position: absolute;
+	top: 56%;
+	left: 35%;
+}
+.page12-input-01{
+	position: absolute;
+	top: 46%;
+	left: 35%;
+}
+.page12-input-02{
+	position: absolute;
+	top: 55%;
+	left: 35%;
+}
+.page12-input-03{
+	position: absolute;
+	top: 64%;
+	left: 35%;
+}
+.page12-input-04{
+	position: absolute;
+	top: 72%;
+	left: 35%;
+}
+.page13-input-01{
+	position: absolute;
+	top: 46%;
+	left: 35%;
+}
+.page13-input-02{
+	position: absolute;
+	top: 55%;
+	left: 35%;
+}
+.page13-input-03{
+	position: absolute;
+	top: 64%;
+	left: 35%;
+}
+.page13-input-04{
+	position: absolute;
+	top: 72%;
+	left: 35%;
+}
+.page14-input-01{
+	position: absolute;
+	top: 46%;
+	left: 35%;
+}
+.page14-input-02{
+	position: absolute;
+	top: 55%;
+	left: 35%;
+}
+.page14-input-03{
+	position: absolute;
+	top: 64%;
+	left: 35%;
+}
+.page14-input-04{
+	position: absolute;
+	top: 72%;
+	left: 35%;
+}
+.page15-input-01{
+	position: absolute;
+	top: 46%;
+	left: 35%;
+}
+.page15-input-02{
+	position: absolute;
+	top: 55%;
+	left: 35%;
+}
+.page15-input-03{
+	position: absolute;
+	top: 64%;
+	left: 35%;
+}
+.page15-input-04{
+	position: absolute;
+	top: 72%;
+	left: 35%;
+}
+.page16-input-01{
+	position: absolute;
+	top: 41%;
+	left: 35%;
+}
+.page16-input-02{
+	position: absolute;
+	top: 50%;
+	left: 35%;
+}
+.page16-input-03{
+	position: absolute;
+	top: 59%;
+	left: 35%;
+}
+.page16-input-04{
+	position: absolute;
+	top: 67%;
+	left: 35%;
+}
+.page17-input-01{
+	position: absolute;
+	top: 46%;
+	left: 35%;
+}
+.page17-input-02{
+	position: absolute;
+	top: 55%;
+	left: 35%;
+}
+.page17-input-03{
+	position: absolute;
+	top: 64%;
+	left: 35%;
+}
+.page17-input-04{
+	position: absolute;
+	top: 72%;
+	left: 35%;
+}
+.page18-input-01{
+	position: absolute;
+	top: 46%;
+	left: 35%;
+}
+.page18-input-02{
+	position: absolute;
+	top: 55%;
+	left: 35%;
+}
+.page18-input-03{
+	position: absolute;
+	top: 64%;
+	left: 35%;
+}
+.page18-input-04{
+	position: absolute;
+	top: 72%;
+	left: 35%;
+}
+.page19-input-01{
+	position: absolute;
+	top: 43%;
+	left: 35%;
+}
+.page19-input-02{
+	position: absolute;
+	top: 52%;
+	left: 35%;
+}
+.page19-input-03{
+	position: absolute;
+	top: 61%;
+	left: 35%;
+}
+.page19-input-04{
+	position: absolute;
+	top: 69%;
+	left: 35%;
+}
+/*11111*/
+.page11-input-01 img{
+	width:10%
+}
+/*2222*/
+.page9-input-01 img,
+.page10-input-02 img,
+.page11-input-02 img,
+.page12-input-01 img,
+.page12-input-02 img,
+.page14-input-02 img,
+.page18-input-02 img,
+.page19-input-01 img{
+	width: 21%;
+}
+/*333*/
+.page9-input-02 img,
+.page10-input-01 img,
+.page16-input-01 img,
+.page16-input-04 img,
+.page17-input-01 img,
+.page17-input-02 img,
+.page17-input-04 img,
+.page18-input-04 img,
+.page19-input-04 img{
+	width: 31%;
+}
+/*44444*/
+.page12-input-03 img,
+.page12-input-04 img,
+.page13-input-01 img,
+.page14-input-01 img,
+.page15-input-02 img,
+.page15-input-03 img,
+.page16-input-02 img,
+.page16-input-03 img,
+.page17-input-03 img,
+.page19-input-02 img{
+	width: 41%;
+}
+/*55555*/
+.page13-input-02 img{
+	width: 51%;
+}
+/*55555*/
+.page13-input-03 img,
+.page13-input-04 img,
+.page14-input-03 img{
+	width: 57%;
+}
+/*55/555*/
+.page14-input-03 img,
+.page15-input-01 img,
+.page14-input-04 img,
+.page15-input-04 img,
+.page18-input-01 img{
+	width: 61%;
+}
+/*77777*/
+.page18-input-03 img,
+.page19-input-03 img{
+	width: 65%;
+}
+.page20-img{
+	width: 80%;
+	top: 10%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	position: absolute;
+}
+.page20-btn-01{
+	width: 40%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	position: absolute;
+	bottom: 30%;
+}
+.page20-btn-02{
+	width: 40%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	position: absolute;
+	bottom: 15%;
+}
+.turntable{
+	height: 100%;
+	position: relative;
+}
+.page21-turntable{
+	width: 80%;
+	position: absolute;
+	top: 40%;
+	bottom: 60%;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.page21-arrow{
+	width: 7%;
+	position: absolute;
+	top: 29%;
+	bottom: 60%;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.page21-btn{
+	width: 40%;
+	position: absolute;
+	bottom: 10%;
+	left: 0;
+	right: 0;
+	margin:0 auto;
+
+}
+.page21-text{
+	width: 60%;
+	position: absolute;
+	bottom: 25%;
+	left: 0;
+	right: 0;
+	margin:0 auto;
+}
+.qr-code{
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	background-color: rgba(0,0,0,0.5);
+}
+.qr-code img{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 80%;
+	margin: auto;
+}
+.award{
+	height: 100%;
+	position: relative;
+	z-index: 999;
+}
+.award-center{
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	background-color: rgba(0,0,0,0.5);
+}
+.award-center-img{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 80%;
+	margin: auto;
+}
+.award-center-btn{
+	position: absolute;
+	top: 65%;
+	left: 0;
+	right: 0;
+	width: 30%;
+	margin: auto;
+}
+.award-main{
+	height: 100%;
+	width: 100%;
+}
+.award-main img{
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin:0 auto;
+}
+.page-31-img{
+	top: 12%;
+	width: 80%;
+}
+.page-31-btn-01{
+	bottom: 13%;
+	width: 40%;
+}
+.page-31-btn-02{
+	bottom: 4%;
+	width: 40%;
+}
+.page-31-btn-03{
+	bottom: 22%;
+	width: 40%;
+}
+.award-address{
+	height: 100%;
+}
+.award-address-img{
+	position: absolute;
+	top: 12%;
+	left: 0;
+	right: 0;
+	width: 80%;
+	margin: auto;
+}
+
+.award-address form{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+}
+.award-address-01{
+	position: absolute;
+	top: 30%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 50%;
+
+}
+.award-address-02{
+	position: absolute;
+	top: 44%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 50%;
+}
+.award-address-03{
+	position: absolute;
+	top: 59%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 50%;
+}
+.award-address .form-group input{
+	border-radius: 0;
+	border: 2px solid #000;
+	height:28px;
+	width:100%;
+}
+.award-address-btn{
+	position: absolute;
+	bottom: 8%;
+	left: 0;
+	right: 0;
+	width: 30%;
+	margin:0 auto;
+	border: 0;
+}
+.share{
+	margin: 10% 0;
+	padding: 0 20px;
+}
+.share div{
+	margin-bottom: 40px;
+	padding: 0 15%;
+}
+.share-title{
+	font-weight: bold;
+}
+.share-text-img,
+.share-title-img{
+	width: 90%;
+	margin: 0 auto 60px;
+	display: block;
+
+}
+.share-btn-img{
+	width: 40%;
+	margin: 0 auto 60px;
+	display: block;
+}
+.share .page-31-img{
+	margin: 0 auto;
+	display: block;
+}
+.share .page-31-btn-01{
+	margin: 40px auto;
+	display: block;
+}
+.page0 .page-31-img{
+	position: absolute;
+	left: 0;
+	right:0;
+	margin: 0 auto;
+}
+.qr-code .page28-img-btn{
+	bottom: 33%;
+	top: 67%;
+	width: 40%;
+}
+.award-06-btn{
+	width: 40%;
+	top: 20%;
+}

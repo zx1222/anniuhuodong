@@ -1,0 +1,759 @@
+body {
+
+    font-family: 'Microsoft YaHei', Arial;
+    position: fixed;
+
+    overflow: auto;
+
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/bg.png");
+
+}
+
+@-webkit-keyframes twinkling {
+    /*透明度由0到1*/
+
+    0% {
+        opacity: .6; /*透明度为1*/
+    }
+    50% {
+        opacity: .2; /*透明度为1*/
+    }
+    100% {
+        opacity: .6; /*透明度为1*/
+    }
+}
+
+/*阿胶大姐卡通人物进入动态效果*/
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: .5;
+        transform: translate3d(-50%, 0px, 0px);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: .5;
+        transform: translate3d(-50%, 0px, 0px);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeInLeft {
+    animation-name: fadeInLeft;
+}
+
+.u-pageLoading {
+    width: 100%;
+    height: 100%;
+}
+
+.u-pageLoading img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 25%;
+    margin: auto;
+}
+
+.logo {
+    position: fixed;
+    z-index: 9;
+    top: 4.46vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    width: 19.98vh;
+    height: 5.05vh;
+
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+#arrow {
+    position: fixed;
+    z-index: 99;
+    right: 0;
+    bottom: 1.6583vh;
+    left: 0;
+
+    width: 6.8822vh;
+    height: 3.7313vh;
+    margin: 0 auto;
+
+    -webkit-animation: twinkling 2s infinite ease-in-out;
+    animation: twinkling 2s infinite ease-in-out;
+
+    background-image: url(../images/arrow.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+.bg-post {
+    position: absolute;
+
+    margin: 0 auto;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+.wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+.page {
+    position: relative;
+
+    overflow: hidden;
+
+    height: 100%;
+
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% 100%;
+}
+
+.page img {
+    -webkit-transition-duration: 2s; /* Safari 和 Chrome */
+    -moz-transition-duration: 2s; /* Firefox 4 */
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+}
+
+.page-post-center {
+    /*定位左右居中*/
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/*logo-静态--begin*/
+.logo-static {
+    position: static;
+}
+
+/*遮罩层--begin*/
+.mask {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    z-index: 10;
+}
+
+/*遮罩层--end*/
+/*顶部花边--begin*/
+.topstrap {
+    width: 100%;
+    height: 3.98vh;
+    background-image: url("../images/topstrap.png");
+    z-index: 5;
+}
+
+/*顶部花边--end*/
+/*标题语--begin*/
+.title {
+    width: 50.89vh;
+    height: 30.17vh;
+    top: 1vh;
+
+    background-image: url("../images/title.png");
+    z-index: 3;
+}
+
+/*标题语--end*/
+/*大姐卡通人物--begin*/
+.ejiaodajie-icon {
+    width: 29.91vh;
+    height: 38.13vh;
+    left: 0;
+    bottom: 0;
+
+    background-image: url("../images/ejiaodajie-icon.png");
+    z-index: 3;
+}
+
+/*大姐卡通人物--end*/
+/*右边房子--begin*/
+.house-one {
+    width: 53.20vh;
+    height: 25.84vh;
+    right: 0;
+    bottom: 0;
+
+    background-image: url("../images/house-one.png");
+    z-index: 3;
+}
+
+/*右边房子--end*/
+/*投票按钮--begin*/
+.vote {
+    width: 8.54vh;
+    height: 3.98vh;
+    background-image: url("../images/vote.png");
+    background-size: 100% 100%;
+}
+
+.vote-link {
+    width: 8.54vh;
+    height: 3.98vh;
+}
+
+/*投票按钮--end*/
+/*显示票数按钮--begin*/
+.poll {
+    padding: 0 12px;
+    border-radius: 5px;
+    height: 25px;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    margin-top: 1px;
+    background-color: #fb331f;
+}
+
+/*显示票数按钮--end*/
+/*投票生成海报--begin*/
+.poster {
+    width: 39.46vh;
+    height: 85vh;
+    top: 0;
+    bottom: 0;
+    background-image: url("../images/poster-bg.png");
+    z-index: 11;
+}
+
+.poster .vote-success {
+    width: 18.65vh;
+    height: 3.81vh;
+    top: 2.64vh;
+    background-image: url("../images/vote-success.png");
+}
+
+.poster .forward {
+    width: 35.32vh;
+    height: 2.48vh;
+    top: 8.56vh;
+    background-image: url("../images/forward.png");
+}
+
+.poster .poster-content {
+    width: 38.8vh;
+    height: 62.27vh;
+    bottom: 10.38vh;
+}
+
+.poster .poster-content img {
+    width: 100%;
+}
+
+/*投票生成海报--end*/
+.page1 .themewords {
+    width: 51.20vh;
+    height: 30.84vh;
+    top: 33.75vh;
+
+    background-image: url("../images/themewords.png");
+    z-index: 3;
+}
+
+.page1 .go {
+    width: 17.91vh;
+    height: 4.97vh;
+    bottom: 29vh;
+
+    background-image: url("../images/go.png");
+    z-index: 5;
+}
+
+a.btn-shadow {
+    height: 100%;
+    display: block;
+    width: 100%;
+}
+
+/*活动规则*/
+.page1 .activity-info {
+    width: 47.84vh;
+    height: 75.37vh;
+    top: 0;
+    bottom: 0;
+    z-index: 11;
+    background-image: url("../images/activity.png");
+}
+
+.page1 .activity-info .close {
+    width: 5.3vh;
+    height: 5.3vh;
+    top: -13px;
+    right: -1px;
+    opacity: 1;
+    z-index: 11;
+    background-image: url("../images/close.png");
+}
+
+.page1 .go .go-link {
+    width: 17.91vh;
+    height: 4.97vh;
+}
+
+.page2 {
+    position: relative;
+    overflow: auto;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% 100%;
+}
+
+.page2 .logo {
+    position: absolute;
+
+}
+
+.page2 .search {
+    width: 80%;
+    top: 34.41vh;
+}
+
+.page2 .search .search-button {
+    width: 50px;
+    height: 34px;
+    border: none;
+    background-image: url("../images/search.png");
+    background-size: 100% 100%;
+}
+
+.page2 .participant {
+    top: 48.41vh;
+    width: 96%;
+    padding: 20px 20px 0px;
+    margin-bottom: 20px;
+    background-image: url("../images/participant-bg.png");
+}
+
+.page2 .participant-title {
+    top: -40PX;
+    width: auto;
+    height: 40px;
+    background-image: url("../images/participant-title.png");
+}
+
+.page2 .participant .pagination {
+    display: block;
+    color: #ff0000;
+}
+
+.page2 .participant .pagination > li > a {
+    float: none;
+    position: inherit;
+    color: #ff0000;
+}
+
+.page2 .personage {
+    background-color: #fff;
+    border: 1px solid #ff7800;
+    padding: 10px;
+    position: relative;
+}
+
+.page2 .personage .poll {
+    top: 5px;
+    right: 10px;
+
+}
+
+.page2 .personage img {
+    width: 128px;
+    height: 128px;
+
+}
+
+.page2 .personage ul {
+    padding: 0;
+}
+
+.page2 .personage ul li {
+    list-style: none;
+    color: #9e1e1e;
+}
+
+.page2 hr {
+    margin: 10px -10px;
+    border: 1px solid #9b541b;
+}
+.page3 .personage-info {
+    padding: 25px 0 0;
+    top: 14vh;
+    width: 54vh;
+    background-image: url("../images/personage-info-bg.png");
+}
+
+.page3 .personage-info .dajietop {
+    width: 40vh;
+    height: 40vh;
+}
+
+.page3 .personage-info-title {
+    top: -2.59vh;
+    width: 32.25vh;
+    height: 5.68vh;
+    background-image: url("../images/personage-info-title.png");
+}
+
+.page3 .personage-info-content .content-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.page3 .personage-info-content ul {
+    padding: 10px 10%;
+    margin-bottom: 0;
+}
+
+.page3 .personage-info-content ul li {
+    list-style: none;
+    margin-bottom: 10px;
+    color: #696969;
+
+}
+
+.page3 .mask, .page3 .poster {
+    display: none;
+}
+
+.page3 .personage-info-content .in-vote {
+    width: 17.66vh;
+    height: 4.97vh;
+    margin-bottom: 15px;
+    background-image: url("../images/in-vote.png");
+    background-size: 100% 100%;
+
+}
+
+.page3 .personage-info-content .in-vote .in-vote-link {
+    width: 17.66vh;
+    height: 4.97vh;
+    display: block;
+}
+
+.page3 .player-title {
+    color: #fb331f;
+    font-weight: bold;
+}
+
+.page3 .poster .poster-lottery {
+    width: 21.66vh;
+    height: 6.38vh;
+    bottom: 2vh;
+    background-image: url("../images/lottery.png");
+}
+
+.page3-2 .sorry {
+    width: 27.38vh;
+    height: 9.78vh;
+    top: 14vh;
+    background-image: url("../images/sorroy.png");
+}
+.page3 .poll-vote {
+    display: inline-block;
+    margin-left: 25%;
+}
+
+/*投票失败文案--begin*/
+.page3-2 .vote-failyre {
+    width: 23.38vh;
+    height: 3.81vh;
+    top: 2.64vh;
+    background-image: url("../images/vote-failyre.png");
+}
+
+.page3-2 .bt-close {
+    width: 22.30vh;
+    height: 6.48vh;
+    bottom: 2vh;
+    background-image: url("../images/bt-close.png");
+}
+
+/*投票失败文案--end*/
+
+.page3-2 .twocode {
+    top: 28vh;
+}
+
+.page3-2 .govote {
+    top: 58vh;
+    width: 38.64vh;
+    height: 2.73vh;
+    z-index: 6;
+    background-image: url("../images/govote.png");
+}
+
+.page4 .vite-text {
+    top: 10vh;
+    width: 28.52vh;
+    height: 10.11vh;
+    background-image: url("../images/vote-text.png");
+}
+
+.page4 .turntable {
+    width: 49.58vh;
+    height: 49.58vh;
+    bottom: 27vh;
+    background-image: url("../images/turntable.png");
+}
+
+.page4 .turntable-icon {
+    width: 13.01vh;
+    height: 15.58vh;
+    bottom: 45vh;
+    background-image: url("../images/turntable-icon.png");
+}
+
+.page4 .house-two {
+    width: 100%;
+    height: 25.58vh;
+    bottom: 0;
+    background-image: url("../images/house-two.png");
+}
+
+.page5 .win {
+    width: 34.57vh;
+    height: 3.89vh;
+    top: 16vh;
+    background-image: url("../images/win.png");
+}
+
+.page10 .no-win {
+    width: 32.25vh;
+    height: 3.89vh;
+    top: 14vh;
+    background-image: url("../images/no-win.png");
+}
+
+.once {
+    width: 36.73vh;
+    height: 6.30vh;
+    top: 22vh;
+    background-image: url("../images/once.png");
+}
+
+.twocode {
+    width: 27.11vh;
+    height: 27.11vh;
+    top: 32vh;
+    z-index: 10;
+}
+
+.close-two {
+    width: 5.8vh;
+    height: 5.8vh;
+    top: 64vh;
+    z-index: 10;
+    background-image: url("../images/close-two.png");
+}
+
+.page6 .article {
+    width: 49.7vh;
+    height: 3.8vh;
+    top: 16vh;
+}
+
+.page6 .article-info {
+    padding: 10px;
+    top: 29vh;
+    width: 30vh;
+    height: 30vh;
+    background-image: url("../images/personage-info-bg.png");
+}
+
+.page6 .writeaddress {
+    bottom: 30vh;
+    width: 20.97vh;
+    height: 6.3vh;
+    z-index: 10;
+    background-image: url("../images/writeaddress.png");
+}
+
+.page7 .topstrap {
+    height: 23px;
+}
+
+.page7 .writeaddress-text {
+    width: 66%;
+    height: 24px;
+    top: 16%;
+    margin-top: 24px;
+    background-image: url("../images/writeaddres-text.png");
+}
+
+.page7 .article {
+    width: 60%;
+    top: 15%;
+}
+
+.page7 .address-content {
+    width: 65%;
+    top: 25%;
+    margin-top: 24px;
+    z-index: 5;
+}
+
+.page7 .address-content .help-block {
+    color: #fff;
+}
+
+.page7 .address-content .Submit {
+    width: 42%;
+    height: 30px;
+    border: none;
+    margin: auto;
+    background-image: url("../images/submit.png");
+    background-size: 100% 100%;
+    z-index: 5;
+}
+
+.page8 .submit-success {
+    width: 15.83vh;
+    height: 3.64vh;
+    top: 15vh;
+    background-image: url("../images/Submit-success.png");
+}
+
+.page9 .anniu {
+    width: 47.16vh;
+    height: 34.07vh;
+    top: 34vh;
+    background-image: url("../images/anniu.png");
+}
+
+.page9 .knowanniu {
+    width: 22.96vh;
+    height: 6.55vh;
+    bottom: 20vh;
+    background-image: url("../images/knowanniu.png");
+}
+
+.page9 .knowanniu-link {
+    width: 22.96vh;
+    height: 6.55vh;
+    display: block;
+}
+
+.page9 .share {
+    width: 22.96vh;
+    height: 6.55vh;
+    bottom: 10vh;
+    background-image: url("../images/share.png");
+}
+
+.page9 .share-bg {
+    width: 44.61vh;
+    height: 39.71vh;
+    top: 0;
+    right: 0;
+    z-index: 11;
+    background-image: url("../images/share-bg.png");
+}
+
+/*屏幕宽度低于450*/
+@media (max-width: 413px) {
+    .page2 .participant {
+        padding: 10px 10PX 0;
+        width: 96%;
+    }
+
+    .page2 .personage img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .page2 hr {
+        margin: 10px 0;
+    }
+    .page3 .personage-info {
+        width: 94%;
+        top: 13vh;
+    }
+    .page3 .personage-info-content ul {
+        padding: 10px 4%;
+    }
+    .page3 .personage-info .dajietop {
+        width: 35vh;
+        height: 35vh;
+    }
+}
+
+
+@media (max-width: 374px) {
+    /*票数字号*/
+    .poll {
+        font-size: 15px;
+    }
+    .page3 .logo {
+        top: 4vh;
+    }
+
+    .page3 .title {
+        width: 50vh;
+        height: 29vh;
+        top: -1vh;
+    }
+
+    .page3 .personage-info {
+        width: 94%;
+        top: 13vh;
+    }
+
+    .page3 .personage-info-content ul {
+        padding: 10px 5% 0;
+    }
+
+    .page3 .personage-info-content .content-title {
+        font-size: 16px;
+    }
+
+    .page3 .personage-info-content .in-vote {
+        margin-bottom: 5px;
+    }
+    .page3 .personage-info .dajietop {
+        width: 30vh;
+        height: 30vh;
+    }
+
+}
+
+
+
+
+
+

@@ -1,0 +1,35 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Miinno-10
+ * Date: 2017/12/20
+ * Time: 11:45
+ */
+use app\modules\anniuyuandan2018\Asset;
+use yii\helpers\Url;
+$this->render('/layouts/_jsapi-share');
+?>
+<div class="codeWrapper">
+    <ul class=" text-ppt text-lightYellow noChance">
+        <li>今</li>
+        <li>日</li>
+        <li>机</li>
+        <li>会</li>
+        <li>已</li>
+        <li>用</li>
+        <li>尽</li>
+    </ul>
+    <img class="code" src="<?= Asset::getAssetUrl('images/code02.png') ?>">
+    <ul class=" text-ppt text-lightYellow">
+        <li>扫</li>
+        <li>码</li>
+        <li>持</li>
+        <li>续</li>
+        <li>关</li>
+        <li>注</li>
+        <li>活</li>
+        <li>动</li>
+    </ul>
+    <a class="btn-close" href="<?= Url::to(['default/share']) ?>"><img
+                src="<?= Asset::getAssetUrl('images/btn-close.png') ?>"></a>
+</div>

@@ -1,0 +1,845 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../font/fontawesome-webfont.eot');
+    src: url('../font/fontawesome-webfont.eot') format('embedded-opentype'), url('../font/fontawesome-webfont.woff2') format('woff2'), url('../font/fontawesome-webfont.woff') format('woff'), url('../font/fontawesome-webfont.ttf') format('truetype'), url('../font/fontawesome-webfont.svg#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    position: fixed;
+}
+
+img {
+    vertical-align: middle;
+    border: 0;
+    outline: 0;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+/*动画*/
+
+@keyframes slideInRight {
+    from {
+        visibility: hidden;
+        transform: translate3d(100%, 0, 0);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        visibility: hidden;
+        transform: translate3d(-100%, 0, 0);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes bounce {
+    0% {
+        bottom: 4%;
+    }
+    50% {
+        bottom: 5%;
+        opacity: .7
+    }
+    100% {
+        bottom: 4%;
+    }
+}
+
+
+/*动画结束*/
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    /*opacity: 0;*/
+}
+
+.swiper-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*同仁堂logo*/
+
+.logo {
+    position: absolute;
+    width: 35%;
+    top: 1.5%;
+    left: 3%;
+}
+
+
+/*p1*/
+
+.swiper-wrapper .swiper-slide:nth-of-type(1) {
+    background: url("../images/p-bg.jpg");
+    background-size: 100% 100%;
+}
+
+.swiper-wrapper .swiper-slide:nth-of-type(1)>img:nth-child(1) {
+    position: absolute;
+    width: 35%;
+    top: 1.5%;
+    left: 3%;
+}
+
+
+.swiper-wrapper .swiper-slide:nth-of-type(1)>img:nth-child(2) {
+    position: absolute;
+    width: 48%;
+    right: 2%;
+    top: 41%;
+    z-index: 2;
+    animation: slideInRight 1.5s linear 1;
+    -webkit-animation: slideInRight 1.5s linear 1;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.swiper-wrapper .swiper-slide:nth-of-type(1)>img:nth-child(3) {
+    position: absolute;
+    width: 35%;
+    left: 0;
+    top: 22%;
+    z-index: 2;
+    animation: slideInLeft 1.5s linear 1;
+    -webkit-animation: slideInLeft 1.5s linear 1;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.swiper-wrapper .swiper-slide:nth-of-type(1)>img:nth-child(4) {
+    position: absolute;
+    width: 54%;
+    left: 23%;
+    bottom: 10%;
+}
+
+.swiper-wrapper .swiper-slide:nth-of-type(1)>img:nth-child(5) {
+    position: absolute;
+    width: 6%;
+    left: 47%;
+    bottom: 4%;
+    animation: bounce 1s linear infinite;
+    -webkit-animation: bounce 1s linear infinite
+}
+
+
+/*p1 end*/
+
+
+/*p2*/
+
+.swiper-wrapper .swiper-slide:nth-of-type(2) {
+    background: url("../images/p-bg5.jpg");
+    background-size: 100% 100%;
+}
+
+
+/*按钮*/
+
+.swiper-wrapper .swiper-slide:nth-of-type(2)>img:nth-child(2) {
+    position: absolute;
+    width: 35%;
+    left: 10%;
+    bottom: 18%;
+}
+.swiper-wrapper .swiper-slide:nth-of-type(2)>.link-exhibition{
+    position: absolute;
+    width: 35%;
+    right: 10%;
+    bottom: 18%;
+}
+.swiper-wrapper .swiper-slide:nth-of-type(2)>.link-exhibition>img {
+    width: 100%;
+}
+.swiper-wrapper .swiper-slide:nth-of-type(2)>img:nth-child(4) {
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    bottom: 9%;
+}
+
+.swiper-wrapper .swiper-slide:nth-of-type(2)>.shade-regulation>img:nth-child(1) {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 3
+}
+
+.swiper-wrapper .swiper-slide:nth-of-type(2)>.shade-regulation>img:nth-child(2) {
+    position: absolute;
+    width: 34%;
+    left: 32%;
+    bottom: 13%;
+    z-index: 3;
+}
+
+
+/*p2 end*/
+
+
+/*上传照片*/
+
+.swiper-wrapper .swiper-slide:nth-of-type(3) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*还未上传前*/
+
+.swiper-wrapper .swiper-slide:nth-of-type(3) .upload-before {
+    background: url("../images/p-bg3.jpg");
+    background-size: 100% 100%;
+    height: 100%;
+}
+
+
+/*webuploader*/
+
+#uploader {
+    flex: 1;
+}
+
+.upload-before .webuploader-container {
+    width: 28%;
+    left: 34%;
+    margin-top: 15%;
+    height: 150px;
+}
+
+.upload-before .webuploader-pick {
+    background: transparent;
+    position: relative;
+    width: 100%;
+    height: 100%
+}
+
+.upload-before .addPhoto {
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    top: 20%;
+}
+
+.upload-before #fileList {
+    position: absolute;
+    width: 32%;
+    left: 34%;
+    height: 150px;
+    z-index: -1;
+    top: 12%;
+}
+
+.upload-before #fileList img {
+    width: 100%;
+}
+.upload-before .file-item{
+    background: #fff;
+    padding: 5px;
+}
+.upload-before #fileList .thumbnail{
+    height: 130px;
+}
+.upload-before #fileList .thumbnail>img{
+    height: 83%;
+}
+.swiper-wrapper .swiper-slide:nth-of-type(3) .upload-before form {
+    width: 90%;
+    height: 300px;
+    margin-left: 5%;
+    margin-top: 5%;
+    flex: 2;
+}
+
+.swiper-wrapper .swiper-slide:nth-of-type(3) .upload-before input {
+    width: 98%;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    margin-top: 10px;
+    padding: 0 5px;
+    font-size: 16px;
+}
+
+.swiper-wrapper .swiper-slide:nth-of-type(3) .upload-before input::-webkit-input-placeholder {
+    font-size: 14px;
+
+}
+
+.swiper-wrapper .swiper-slide:nth-of-type(3) .upload-before textarea {
+    width: 98%;
+    height: 80px;
+    border: none;
+    border-radius: 6px;
+    margin-top: 10px;
+    padding: 0 5px;
+    font-size: 16px;
+}
+.swiper-wrapper .swiper-slide:nth-of-type(3) .upload-before textarea::-webkit-input-placeholder {
+
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+.swiper-wrapper .swiper-slide:nth-of-type(3) .upload-before .btn-submit {
+    margin-top: 10px;
+    width: 38%;
+    margin-left: 31%;
+}
+
+
+/*还未上传前结束*/
+
+
+/*等待审核遮罩*/
+
+.swiper-wrapper .swiper-slide:nth-of-type(3) .shade-audit {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    top:0;
+}
+
+.swiper-wrapper .swiper-slide:nth-of-type(3) .shade-audit>img:nth-child(1) {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+/*确定按钮*/
+.swiper-wrapper .swiper-slide:nth-of-type(3) .shade-audit>a{
+    position: absolute;
+    width: 38%;
+    margin-left: 31%;
+    bottom: 28%;
+    z-index: 3;
+    height:36px;
+}
+.swiper-wrapper .swiper-slide:nth-of-type(3) .shade-audit>a img{
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+}
+
+/*上传照片结束*/
+
+
+
+
+/*照片详情页*/
+
+.photo-container {
+    width: 100%;
+    height: 100%;
+}
+
+.photo-container .reviewed {
+    background: url("../images/p-bg4.jpg");
+    background-size: 100% 100%;
+    height: 100%;
+}
+
+.photo-container .reviewed .detail-txt {
+    position: absolute;
+    width: 64%;
+    left: 18%;
+    top: 11%;
+}
+
+/*.photo-container .reviewed .photo {*/
+    /*position: absolute;*/
+    /*width: 56%;*/
+    /*left: 22%;*/
+    /*top: 24%;*/
+    /*max-height: 25%;*/
+    /*border-radius: 10px;*/
+/*}*/
+
+.photo-container .reviewed .info {
+    position: absolute;
+    width: 78%;
+    left: 11%;
+    background: #7535ae;
+    border-radius: 10px;
+    color: #fff;
+    height: 22%;
+    bottom: 22%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.photo-container .reviewed .info .r {
+    width: 100%;
+    display: flex
+}
+
+.photo-container .reviewed .info .r p {
+    /*    width: 50%;*/
+    font-size: 18px;
+    /*    float: left*/
+    flex: 1;
+    padding-top: 5px;
+}
+
+.photo-container .reviewed .info .manifesto {
+    font-size: 16px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    max-height: 47px;
+    overflow: hidden;
+}
+
+.photo-container .reviewed.under-review .audit-txt {
+    position: absolute;
+    width: 32%;
+    left: 34%;
+    bottom: 14%
+}
+
+.photo-container .reviewed .under-review .btn-all-l {
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    bottom: 6%;
+}
+
+.photo-container .reviewed .approved .btn-all {
+    position: absolute;
+    width: 35%;
+    left: 10%;
+    bottom: 14%;
+}
+
+.photo-container .reviewed .approved .btn-call {
+    position: absolute;
+    width: 35%;
+    right: 10%;
+    bottom: 14%;
+}
+
+.photo-container .reviewed .approved .btn-vote-ta {
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    bottom: 6%;
+}
+
+/*分享遮罩*/
+
+.photo-container .shade-share>img:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('../images/share_shade_bg.png');
+    background-size: 100% 100%;
+}
+
+.photo-container .shade-share>img:nth-child(2) {
+    position: absolute;
+    width: 20%;
+    right: 6%;
+    top: 1%;
+}
+
+/*未审核*/
+.photo-container .not-audit{
+    background: url("../images/p-bg4.jpg");
+    background-size: 100% 100%;
+    height: 100%;
+}
+.photo-container  .detail-txt {
+    position: absolute;
+    width: 64%;
+    left: 18%;
+    top: 9%;
+}
+
+.photo-container .photo-wrapper {
+    position: absolute;
+    width: 56%;
+    left: 22%;
+    top: 21%;
+    height: 26%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.photo-container .photo-wrapper .photo {
+    width: 100%;
+}
+.photo-container .info {
+    position: absolute;
+    width: 78%;
+    left: 11%;
+    background: #7535ae;
+    border-radius: 10px;
+    color: #fff;
+    height: 22%;
+    bottom: 22%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.photo-container .info .r {
+    width: 100%;
+    display: flex
+}
+
+.photo-container .info .r p {
+    font-size: 18px;
+    flex: 1;
+    padding-top: 5px;
+}
+
+.photo-container .info .manifesto {
+    font-size: 16px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    max-height: 47px;
+    overflow: hidden;
+}
+.photo-container .not-audit .under-review .audit-txt {
+    position: absolute;
+    width: 32%;
+    left: 34%;
+    bottom: 14%
+}
+.photo-container .not-audit .under-review>a{
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    bottom: 6%;
+    height: 40px;
+}
+.photo-container .not-audit .under-review>a .btn-all-l {
+    position: absolute;
+    width: 100%;
+}
+
+/*审核未通过*/
+.photo-container .unaudited{
+    background: url("../images/p-bg4.jpg");
+    background-size: 100% 100%;
+    height: 100%;
+}
+.photo-container .unaudited .under-review .unadited-txt {
+    position: absolute;
+    width: 100%;
+    bottom: 14%
+}
+.photo-container .unaudited .under-review>a{
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    bottom: 6%;
+    height: 40px;
+}
+.photo-container .unaudited .under-review>a .btn-all-l {
+    position: absolute;
+    width: 100%;
+}
+/*照片详情页结束*/
+
+
+/*照片列表页*/
+
+.exhibition-container {
+    background: url("../images/p-bg2.jpg");
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.exhibition-container .contentWrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    z-index: 3
+}
+
+.exhibition-container input {
+    position: absolute;
+    width: 82%;
+    height: 34px;
+    top: 44%;
+    left: 9%;
+    border-radius: 6%/50%;
+    border: none;
+    text-align: center;
+}
+
+.exhibition-container .btn-search {
+    position: absolute;
+    width: 10%;
+    height: 34px;
+    top: 44%;
+    right: 10%;
+    border: none;
+    text-align: center;
+    color: #555;
+    background: #fff;
+    border-radius: 50%;
+}
+
+
+/*照片展示部分*/
+
+.exhibition-container .content {
+    position: absolute;
+    width: 88%;
+    left: 0;
+    top: 50%;
+    padding: 0 6%;
+}
+.exhibition-container .search
+{
+    width: 20px;
+}
+.exhibition-container .content .photo-box {
+    position: relative;
+    float: left;
+    margin: 5px;
+    width: calc(50% - 10px);
+    height: 195px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.exhibition-container .content .photo-box a {
+    width: 100%;
+    height: 100%;
+}
+
+.exhibition-container .content .photo-box .t {
+    float: left;
+    width: 100%;
+    height: 75%;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.exhibition-container .content .photo-box .t .photo {
+    width: 100%;
+}
+.exhibition-container .content .photo-box .b {
+    width: 100%;
+    height: 25%;
+    font-size: 12px;
+    z-index: 2;
+    float: left;
+    background: #fff;
+}
+.exhibition-container .content .photo-box .l {
+    width: 60%;
+    height: 45px;
+    float: left;
+    font-size: 12px;
+    z-index: 2;
+}
+
+.exhibition-container .content .photo-box .l>.nickname {
+    position: absolute;
+    width: 57%;
+    top: 76%;
+    color: #555;
+    padding-left: 5px;
+}
+
+.exhibition-container .content .photo-box .l>.number {
+    position: absolute;
+    width: 57%;
+    top: 85%;
+    color: #555;
+    padding-left: 5px;
+}
+
+.exhibition-container .content .photo-box .btn-vote-s {
+    float: left;
+    width: 50px;
+    border: 5px solid transparent;
+}
+
+.exhibition-container .shade-vote-success {
+    position: absolute;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+
+/*投票成功遮罩*/
+
+.shade-vote-success>img:nth-child(1) {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.shade-vote-success .btn-ejiao {
+    position: absolute;
+    width: 38%;
+    bottom: 28%;
+    left: 34%;
+    z-index: 3;
+}
+
+.shade-vote-success .btn-close {
+    position: absolute;
+    width: 12%;
+    top: 24%;
+    right: 1%;
+    z-index: 3;
+}
+
+
+/*只能投一次票遮罩*/
+
+.shade-voteonly1>img:nth-child(1) {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.shade-voteonly1 .btn-ejiao {
+    position: absolute;
+    width: 38%;
+    bottom: 29%;
+    left: 33%;
+    z-index: 3;
+}
+
+.shade-voteonly1 .btn-close {
+    position: absolute;
+    width: 12%;
+    top: 24%;
+    right: 1%;
+    z-index: 3;
+}
+
+
+/*照片列表页结束*/
+
+@media screen and (min-width: 320px) and (max-width: 359px) {
+    /*!*iPhone < 5 Portrait*!*/
+    .upload-before .webuploader-container {
+        width: 28%;
+        left: 34%;
+        margin-top: 15%;
+        height: 120px;
+    }
+
+    .upload-before #fileList {
+        position: absolute;
+        width: 32%;
+        left: 34%;
+        height: 120px;
+        z-index: -1;
+        top: 12%;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 374px) {
+    /*!*iPhone < 5 Portrait*!*/
+    .ejiao_description .form form p {
+        margin-bottom: 12px;
+    }
+    .ejiao_description .form form .text {
+        width: 56%;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 411px) {
+    /*!*iPhone 6*!*/
+    .ejiao_description .form form p {
+        margin-bottom: -5px;
+    }
+    .ejiao_description .form form .text {
+        width: 56%;
+    }
+}
+
+@media screen and (min-width: 412px) and (max-width: 736px) {
+    /*!*iPhone 6+ Portrait*!*/
+    .ejiao_description .form form p {
+        margin-bottom: -6px;
+    }
+    .ejiao_description .form form .text {
+        width: 56%;
+    }
+}
+
+
+/*6*/
+
+@media (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    .ejiao_description .form form p {
+        margin-bottom: -5px;
+    }
+    .ejiao_description .form form .text {
+        width: 56%;
+    }
+}
+
+
+/*6+*/
+
+@media (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+    .ejiao_description .form form p {
+        margin-bottom: 5px;
+    }
+    .ejiao_description .form form .text {
+        width: 56%;
+    }
+}

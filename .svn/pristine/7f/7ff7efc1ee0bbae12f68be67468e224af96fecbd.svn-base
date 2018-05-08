@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>安牛元旦</title>
+    <meta name="viewport"
+          content="width=device-width,user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <!--强制竖屏-->
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="x5-page-mode" content="app">
+
+    <link rel="stylesheet" href="assets/css/index.min.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+
+</head>
+<body>
+<div class="turntable">
+    <img class="logo" src="assets/images/logo.png">
+    <img class="turntable-panel" src="assets/images/turntable.png">
+    <img class="btn-draw" src="assets/images/turntable-icon.png">
+</div>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.rotate.min.js"></script>
+<script src="assets/js/jquery.parallax.min.js"></script>
+<script src="assets/js/swiper.min.js"></script>
+<script src="assets/js/index.js"></script>
+</body>
+</html>

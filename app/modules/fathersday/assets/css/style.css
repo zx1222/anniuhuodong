@@ -1,0 +1,2168 @@
+body {
+    font-family: 'Microsoft YaHei', Arial;
+
+    position: fixed;
+
+    overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+    background-color: #66c4b7;
+}
+
+.u-pageLoading {
+    width: 100%;
+    height: 100%;
+}
+
+.u-pageLoading img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 25%;
+    margin: auto;
+}
+
+.bg-post {
+    position: absolute;
+
+    margin: 0 auto;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+.logo {
+    position: fixed;
+    z-index: 9999;
+    top: 4.146vh;
+    left: 3.3167vh;
+
+    width: 37.48vh;
+    height: 4.146vh;
+
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+.home-btn {
+    position: fixed;
+    z-index: 9999;
+    top: 4.146vh;
+    right: 3.233vh;
+
+    width: 10.8623vh;
+    height: 3.8971vh;
+
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+.home-btn-1{
+    background-image: url(../images/home-btn.png);
+}
+.home-btn-2{
+    background-image: url(../images/home-btn-2.png);
+}
+.home-btn-3{
+    background-image: url(../images/home-btn-3.png);
+}
+
+.a-btn {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.arrow {
+    position: fixed;
+    z-index: 99;
+    right: 0;
+    bottom: 1.6583vh;
+    left: 0;
+
+    width: 6.8822vh;
+    height: 3.7313vh;
+    margin: 0 auto;
+
+    -webkit-animation: twinkling 2s infinite ease-in-out;
+    animation: twinkling 2s infinite ease-in-out;
+
+    background-image: url(../images/arrow.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+@-webkit-keyframes twinkling {
+    /*透明度由0到1*/
+
+    0% {
+        opacity: .6; /*透明度为1*/
+    }
+    50% {
+        opacity: .2; /*透明度为1*/
+    }
+    100% {
+        opacity: .6; /*透明度为1*/
+    }
+}
+
+@keyframes twinkling {
+    /*透明度由0到1*/
+
+    0% {
+        opacity: .6; /*透明度为1*/
+    }
+    50% {
+        opacity: .2; /*透明度为1*/
+    }
+    100% {
+        opacity: .6; /*透明度为1*/
+    }
+}
+
+.main-center {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper-main {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+.page {
+    position: relative;
+
+    overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% 100%;
+}
+
+.page-inner {
+    position: absolute;
+    z-index: 999;
+    top: 0;
+
+    overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% 100%;
+}
+
+.page img {
+    -webkit-transition-duration: 4s; /* Safari 和 Chrome */
+    -moz-transition-duration: 4s; /* Firefox 4 */
+    -o-transition-duration: 4s;
+    transition-duration: 4s;
+}
+
+/*鱼，树叶全局样式*/
+.fish {
+    width: 3.0679vh;
+    height: 2.0729vh;
+
+    background-image: url(../images/fish.png);
+}
+
+.leaf-first {
+    width: 5.804vh;
+    height: 4.726vh;
+
+    background-image: url(../images/leaf.png);
+}
+
+.leaf-last {
+    width: 5.804vh;
+    height: 4.726vh;
+
+    background-image: url(../images/leaf.png);
+}
+
+.fish {
+    -webkit-animation: littleico 3.5s infinite ease-in-out;
+    animation: littleico 3.5s infinite ease-in-out;
+}
+
+.leaf-first {
+    -webkit-animation: littleico 4s infinite ease-in-out;
+    animation: littleico 4s infinite ease-in-out;
+}
+
+.leaf-last {
+    -webkit-animation: littleico 4.5s infinite ease-in-out;
+    animation: littleico 4.5s infinite ease-in-out;
+}
+
+@-webkit-keyframes littleico {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes littleico {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/*第一页样式*/
+
+.page1 .fish {
+    top: 10.364vh;
+    right: 4.39vh;
+
+    width: 3.0679vh;
+    height: 2.0729vh;
+}
+
+.page1 .leaf-first {
+    top: 39.884vh;
+    left: 5.389vh;
+
+    width: 5.804vh;
+    height: 4.726vh;
+}
+
+.page1 .leaf-last {
+    top: 57.462vh;
+    right: 3.068vh;
+
+    width: 5.804vh;
+    height: 4.726vh;
+}
+
+.page1-center {
+    top: 7.877vh;
+    right: 0;
+    left: 0;
+
+    width: 60.696vh;
+    max-width: 98%;
+    height: 84.494vh;
+
+    background-image: url(../images/page1-center.jpg);
+}
+
+.page1-photo-main {
+    top: 52.1558vh;
+    right: 0;
+    left: 0;
+
+    overflow: hidden;
+
+    width: 26.617vh;
+    height: 24.295vh;
+}
+
+.page1-photo {
+    top: -200%;
+
+    width: 26.617vh;
+    height: 24.295vh;
+
+    background-image: url(../images/page1-photo.jpg);
+}
+
+.title-cloud {
+    width: 10.7794vh;
+    height: 7.9601vh;
+
+    background-image: url(../images/title-cloud.png);
+}
+
+.aircraft {
+    width: 4.975vh;
+    height: 4.063vh;
+
+    background-image: url(../images/aircraft.png);
+}
+
+/*第二页样式*/
+
+.page2-center {
+    top: 12.6865vh;
+    right: 0;
+    left: 0;
+
+    width: 57.6285vh;
+    max-width: 98%;
+    height: 72.8026vh;
+
+    background-image: url(../images/page2-center.jpg);
+}
+
+.page2-photo-first {
+    top: 11.5257vh;
+    left: 2.1559vh;
+
+    width: 33.2205vh;
+    height: 22.4212vh;
+    -webkit-transform: rotateZ(-15deg);
+    transform: rotateZ(-15deg);
+    background-image: url(../images/page2-photo-first.png);
+}
+
+.page2-photo-last {
+    top: 29.6020vh;
+    right: 3.0680vh;
+
+    width: 33.8209vh;
+    height: 22.6119vh;
+    -webkit-transform: rotateZ(15deg);
+    transform: rotateZ(15deg);
+    background-image: url(../images/page2-photo-last.png);
+}
+
+.page2 .fish {
+    top: 16.0032vh;
+    right: 9.2869vh;
+}
+
+.page2 .leaf-first {
+    top: 42.620vh;
+    left: .9121vh;
+}
+
+.page2 .leaf-last {
+    top: 65.6716vh;
+    right: 0;
+}
+
+/*第三页样式*/
+
+.page3-center {
+    top: 12.6865vh;
+    right: 0;
+    left: 0;
+
+    width: 58.1260vh;
+    max-width: 98%;
+    height: 73.9635vh;
+
+    background-image: url(../images/page3-center.jpg);
+}
+
+.page3-photo-first {
+    top: 11.5257vh;
+    left: 2.1559vh;
+
+    width: 33.8209vh;
+    height: 22.6119vh;
+    -webkit-transform: rotateZ(-15deg);
+    transform: rotateZ(-15deg);
+    background-image: url(../images/page3-photo-first.png);
+}
+
+.page3-photo-last {
+    top: 29.6020vh;
+    right: 3.0680vh;
+
+    width: 33.8209vh;
+    height: 22.6119vh;
+    -webkit-transform: rotateZ(15deg);
+    transform: rotateZ(15deg);
+    background-image: url(../images/page3-photo-last.png);
+}
+
+.page3 .fish {
+    top: 16.0032vh;
+    right: 9.2869vh;
+}
+
+.page3 .leaf-first {
+    top: 42.620vh;
+    left: .9121vh;
+}
+
+.page3 .leaf-last {
+    top: 65.6716vh;
+    right: 0;
+}
+
+/*第四页样式*/
+
+.page4-center {
+    top: 12.6865vh;
+    right: 0;
+    left: 0;
+
+    width: 58.1260vh;
+    max-width: 98%;
+    height: 73.9635vh;
+
+    background-image: url(../images/page4-center.jpg);
+}
+
+.page4-photo-first {
+    top: 11.5257vh;
+    left: 2.1559vh;
+
+    width: 33.8209vh;
+    height: 22.6119vh;
+    -webkit-transform: rotateZ(-15deg);
+    transform: rotateZ(-15deg);
+    background-image: url(../images/page4-photo-first.png);
+}
+
+.page4-photo-last {
+    top: 29.6020vh;
+    right: 3.0680vh;
+
+    width: 33.8209vh;
+    height: 22.6119vh;
+    -webkit-transform: rotateZ(15deg);
+    transform: rotateZ(15deg);
+    background-image: url(../images/page4-photo-last.png);
+}
+
+.page4 .fish {
+    top: 16.0032vh;
+    right: 9.2869vh;
+}
+
+.page4 .leaf-first {
+    top: 42.620vh;
+    left: .9121vh;
+}
+
+.page4 .leaf-last {
+    top: 65.6716vh;
+    right: 0;
+}
+
+/*展示相片*/
+.home-left-photo {
+    -webkit-animation: opacitypage 2s infinite;
+    animation: opacitypage 2s infinite;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+@-webkit-keyframes opacitypage {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.home-right-photo {
+    -webkit-animation: photosizepage 2s infinite;
+    animation: photosizepage 2s infinite;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+@-webkit-keyframes photosizepage {
+    0% {
+        transform: scale(2, 2);
+
+        opacity: 0;
+    }
+    50% {
+        transform: scale(2, 2);
+
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1, 1);
+
+        opacity: 1;
+    }
+}
+
+/*campaign*/
+
+.page11-ico-1 {
+    -webkit-animation: pageone 4s infinite ease-in-out;
+    animation: pageone 4s infinite ease-in-out;
+}
+
+.page11-ico-2 {
+    -webkit-animation: pagetwo 4s infinite ease-in-out;
+    animation: pagetwo 4s infinite ease-in-out;
+}
+
+.page11-ico-3 {
+    -webkit-animation: pagethree 4s infinite ease-in-out;
+    animation: pagethree 4s infinite ease-in-out;
+}
+
+@-webkit-keyframes pageone {
+    0% {
+        transform: scale(1, 1);
+    }
+    33.33% {
+        transform: scale(1.2, 1.2);
+    }
+    66.66% {
+        transform: scale(1, 1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+@-webkit-keyframes pagetwo {
+    0% {
+        transform: scale(1, 1);
+    }
+    33.33% {
+        transform: scale(1, 1);
+    }
+    66.66% {
+        transform: scale(1.2, 1.2);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+@-webkit-keyframes pagethree {
+    0% {
+        transform: scale(1.2, 1.2);
+    }
+    33.33% {
+        transform: scale(1, 1);
+    }
+    66.66% {
+        transform: scale(1, 1);
+    }
+    100% {
+        transform: scale(1.2, 1.2);
+    }
+}
+
+@keyframes pageone {
+    0% {
+        transform: scale(1, 1);
+    }
+    33.33% {
+        transform: scale(1.2, 1.2);
+    }
+    66.66% {
+        transform: scale(1, 1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes pagetwo {
+    0% {
+        transform: scale(1, 1);
+    }
+    33.33% {
+        transform: scale(1, 1);
+    }
+    66.66% {
+        transform: scale(1.2, 1.2);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes pagethree {
+    0% {
+        transform: scale(1.2, 1.2);
+    }
+    33.33% {
+        transform: scale(1, 1);
+    }
+    66.66% {
+        transform: scale(1, 1);
+    }
+    100% {
+        transform: scale(1.2, 1.2);
+    }
+}
+
+.page11 .fish {
+    top: 10.4477vh;
+    right: 4.3117vh;
+
+    width: 3.0679vh;
+    height: 2.0729vh;
+}
+
+.page11 .leaf-first {
+    top: 39.3864vh;
+    left: .4145vh;
+
+    width: 5.804vh;
+    height: 4.726vh;
+}
+
+.page11 .leaf-last {
+    top: 68.2421vh;
+    right: 4.9800vh;
+
+    width: 5.804vh;
+    height: 4.726vh;
+
+    -webkit-transform: scale(.8, .8) rotateZ(45deg);
+    transform: scale(.8, .8) rotateZ(45deg);
+}
+
+.page11 .title-cloud {
+    top: 7.877vh;
+    right: 1vh;
+}
+
+.page11-title {
+    top: 10.9452vh;
+    right: 0;
+    left: 0;
+
+    width: 56.799vh;
+    height: 28.4411vh;
+
+    background-image: url(../images/page11-title.png);
+}
+
+.page11-text {
+    top: 38.6401vh;
+    right: 0;
+    left: 0;
+
+    width: 50.995vh;
+    height: 11.6086vh;
+
+    background-image: url(../images/page11-text.png);
+}
+
+.page11-ico-1 {
+    top: 49.7512vh;
+    left: 5.7214vh;
+
+    width: 13.6816vh;
+    height: 14.4278vh;
+
+    background-image: url(../images/page11-ico-1.png);
+}
+
+.page11-ico-2 {
+    top: 49.7512vh;
+    right: 0;
+    left: 0;
+
+    width: 13.6816vh;
+    height: 14.4278vh;
+
+    background-image: url(../images/page11-ico-2.png);
+}
+
+.page11-ico-3 {
+    top: 49.7512vh;
+    right: 5.7214vh;
+
+    width: 13.6816vh;
+    height: 14.4278vh;
+
+    background-image: url(../images/page11-ico-3.png);
+}
+
+.page11-help-ico {
+    top: 66.3350vh;
+    right: 0;
+    left: 0;
+
+    width: 23.7976vh;
+    height: 7.0481vh;
+
+    background-image: url(../images/page11-help-ico.png);
+}
+
+.page11-into {
+    right: 0;
+    bottom: 17.32vh;
+    left: 0;
+
+    width: 23.7976vh;
+    height: 7.0481vh;
+
+    background-image: url(../images/page11-into.png);
+}
+
+.page11-understand {
+    right: 0;
+    bottom: 8.1990vh;
+    left: 0;
+
+    width: 23.7976vh;
+    height: 7.0481vh;
+
+    background-image: url(../images/page11-understand.png);
+}
+
+.page11-no,
+.page11-help {
+    background-color: #66c4b7;
+}
+
+.page11-help .fish {
+    top: 8.4577vh;
+    right: 5.058vh;
+}
+
+.page11-help .leaf-first {
+    top: 32.587vh;
+    left: 1.2437vh;
+}
+
+.page11-help .leaf-last {
+    top: 81.675vh;
+    right: 1.99vh;
+
+    -webkit-transform: scale(1, 1) rotateZ(-15deg);
+    transform: scale(1, 1) rotateZ(-15deg);
+}
+
+.page11-help-text {
+    top: 10.9452vh;
+    right: 0;
+    left: 0;
+
+    width: 54.063vh;
+    height: 86.9817vh;
+
+    background-image: url(../images/page11-help-text.jpg);
+}
+
+.page11-help-return {
+    right: 0;
+    bottom: 6.3018vh;
+    left: 0;
+
+    width: 17.8275vh;
+    height: 5.6384vh;
+
+    background-image: url(../images/return.png);
+}
+
+.page11-no-img {
+    position: absolute;
+    top: 26.6169vh;
+    right: 0;
+    left: 0;
+
+    width: 45.5223vh;
+    height: 20.9784vh;
+    margin: 0 auto;
+}
+
+.page11-no-ico {
+    position: absolute;
+    top: 29.4311vh;
+    right: 10.6865vh;
+
+    width: 2.819vh;
+    height: 2.819vh;
+}
+
+.page12 .title-cloud {
+    top: 8.4577vh;
+    right: 0;
+}
+
+.page12 .leaf-first {
+    top: 51.0779vh;
+    right: 4.394vh;
+}
+
+.page12 .fish {
+    top: 11.6915vh;
+    right: 4.394vh;
+}
+
+.page12 .upload-photo {
+    top: 17.9104vh;
+    right: 0;
+    left: 0;
+
+    width: 45.7711vh;
+    height: 32.0066vh;
+    text-align: center;
+}
+
+.page12 .upload-photo .preview {
+    position: relative;
+}
+
+.page12 .upload-photo .preview .form-group {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.page12 .upload-photo img {
+
+    max-width: 45.7711vh;
+    max-height: 32.0066vh;
+
+}
+
+.btn-cover {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.page12 .upload-text {
+    top: 54.3117vh;
+    right: 0;
+    left: 0;
+
+    width: 44.1127vh;
+    height: 11.6915vh;
+
+    background-image: url(../images/upload-text-1.png);
+}
+
+.page12 .add-photo {
+    right: 0;
+    bottom: 17.1641vh;
+    left: 0;
+
+    width: 22.388vh;
+    height: 6.6334vh;
+
+    background-image: url(../images/add-photo.png);
+}
+
+.page12 .upload-aircraft {
+    bottom: 6.7993vh;
+    left: 1.4096vh;
+
+    width: 14.0961vh;
+    height: 22.6368vh;
+
+    background-image: url(../images/upload-aircraft.png);
+}
+
+.page12-ok,
+.page13-ok {
+    right: 0;
+    bottom: 7.1641vh;
+    left: 0;
+
+    width: 22.388vh;
+    height: 6.6334vh;
+
+    background-image: url(../images/next-btn.png);
+}
+
+.page13 .title-cloud {
+    top: 8.4577vh;
+    right: 0;
+}
+
+.page13 .leaf-first {
+    top: 51.0779vh;
+    right: 4.394vh;
+}
+
+.page13 .fish {
+    top: 11.6915vh;
+    right: 4.394vh;
+}
+
+.page13 .upload-photo {
+    top: 17.9104vh;
+    right: 0;
+    left: 0;
+
+    width: 45.7711vh;
+    height: 32.0066vh;
+
+}
+
+.page13 .upload-photo .preview {
+    position: relative;
+}
+
+.page13 .upload-photo .preview .form-group {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.page13 .upload-photo img {
+
+    max-width: 45.7711vh;
+    max-height: 32.0066vh;
+
+}
+
+.page13 .upload-text {
+    top: 54.3117vh;
+    right: 0;
+    left: 0;
+
+    width: 44.1127vh;
+    height: 11.6915vh;
+
+    background-image: url(../images/upload-text-2.png);
+}
+
+.page13 .add-photo {
+    right: 0;
+    bottom: 17.1641vh;
+    left: 0;
+
+    width: 22.388vh;
+    height: 6.6334vh;
+
+    background-image: url(../images/add-photo.png);
+}
+
+#fileId2 {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+}
+
+.page13 .upload-aircraft {
+    bottom: 6.7993vh;
+    left: 1.4096vh;
+
+    width: 14.0961vh;
+    height: 22.6368vh;
+
+    background-image: url(../images/upload-aircraft.png);
+}
+
+.page14 .title-cloud {
+    top: 8.4577vh;
+    right: 0;
+}
+
+.page14 .leaf-first {
+    top: 51.0779vh;
+    right: 4.394vh;
+}
+
+.page14 .fish {
+    top: 11.6915vh;
+    right: 4.394vh;
+}
+
+.page14 .upload-aircraft {
+    bottom: 6.7993vh;
+    left: 1.4096vh;
+
+    width: 14.0961vh;
+    height: 22.6368vh;
+
+    background-image: url(../images/upload-aircraft.png);
+}
+
+.page14-text {
+    right: 0;
+    bottom: 20.8126vh;
+    left: 0;
+
+    width: 41.2132vh;
+    height: 9.7869vh;
+    padding: 1.74vh;
+
+    border: 2px solid #009b85;
+    background-color: #fff;
+}
+
+.page14-text textarea {
+    font-size: 2vh;
+
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+    color: #b9b9b9;
+    border: none;
+}
+
+.page14-text textarea:focus {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.page14-btn {
+    right: 0;
+    bottom: 10.9452vh;
+    left: 0;
+
+    width: 19.0713vh;
+    height: 6.6334vh;
+
+    background-image: url(../images/submit-btn.png);
+}
+
+.page14-photo-1 {
+    top: 15vh;
+    left: 10vw;
+    max-width: 80vw;
+    max-height:40vh;
+
+    -webkit-transform: rotateZ(-20deg);
+    transform: rotateZ(-20deg);
+}
+
+.page14-photo-1 img{
+    max-width: 80vw;
+    max-height:40vh;
+}
+
+
+
+.page14-photo-2 {
+    top: 20vh;
+    right: 10vw;
+    max-width: 80vw;
+    max-height:40vh;
+
+    -webkit-transform: rotateZ(15deg);
+    transform: rotateZ(15deg);
+}
+.page14-photo-2 img{
+    max-width: 80vw;
+    max-height:40vh;
+}
+.page14-photo {
+    display: block;
+
+    width: 100%;
+    margin: auto;
+}
+
+.page12 .arrow,
+.page13 .arrow,
+.page15 .arrow {
+    position: absolute;
+}
+
+.page15-share {
+    right: 0;
+    bottom: 28.6898vh;
+    left: 0;
+
+    width: 23.8805vh;
+    height: 7.048vh;
+
+    background-image: url(../images/share-btn.png);
+}
+
+.page15-close {
+    right: 0;
+    bottom: 17.0812vh;
+    left: 0;
+
+    width: 23.8805vh;
+    height: 7.048vh;
+
+    background-image: url(../images/page11-understand.png);
+}
+
+.page15-center {
+    top: 27.7777vh;
+    right: 0;
+    left: 0;
+
+    width: 54.5605vh;
+    height: 48.3416vh;
+
+    background-image: url(../images/page15-center.jpg);
+}
+
+.page15 .title-cloud {
+    top: 8.4577vh;
+    right: 0;
+}
+
+.page15 .leaf-first {
+    top: 49.7512vh;
+    left: 2.3217vh;
+}
+
+.page15 .fish {
+    top: 11.6915vh;
+    right: 4.394vh;
+}
+
+.page15 .aircraft {
+    right: 0;
+    bottom: 41.9568vh;
+    left: 0;
+}
+
+.page15-title {
+    top: 12.7694vh;
+    right: 0;
+    left: 0;
+
+    width: 54.5605vh;
+    height: 22.1393vh;
+
+    background-image: url(../images/page15-title.png);
+}
+
+.page15-help {
+    background-color: rgba(0, 0, 0, .68);
+}
+
+.page15-help-code {
+    position: absolute;
+    top: 20.4809vh;
+    right: 0;
+    left: 0;
+
+    width: 45.5223vh;
+    height: 54.9751vh;
+    margin: 0 auto;
+}
+
+.page15-help-close {
+    position: absolute;
+    top: 23.3vh;
+    right: 10.3598vh;
+
+    width: 2.8192vh;
+    height: 2.8192vh;
+}
+
+/* exhibition*/
+.exhibition-main {
+    overflow-y: auto;
+}
+
+.exhibition-top {
+    position: fixed;
+    width: 100%;
+    height: 8.3vh;
+    background-color: #66c4b7;
+    z-index: 99;
+}
+
+.exhibition-main .title-cloud {
+    top: 7.8772vh;
+    right: .995vh;
+}
+
+.exhibition-main .fish {
+    top: 9.7844vh;
+    right: 4.3946vh;
+}
+
+.exhibition-main .leaf-first {
+    top: 30.0995vh;
+    left: .8291;
+}
+
+.exhibition-main .leaf-last {
+    top: 42.7031vh;
+    right: 1.4925vh;
+}
+
+.exhibition-main .aircraft {
+    bottom: 19.9834vh;
+    left: 0;
+}
+
+.exhibition-center {
+    top: 11.7744vh;
+    right: 0;
+    left: 0;
+
+    width: 56.8822vh;
+    max-width: 98%;
+    height: 46.6832vh;
+
+    background-image: url(../images/exhibition-center.jpg);
+}
+
+.exhibition-btn {
+
+    width: 23.0514vh;
+    height: 7.2139vh;
+
+    background-image: url(../images/activities-home.png);
+}
+
+.exhibition-text {
+
+    width: 23.0514vh;
+    height: 1.9071vh;
+    margin-bottom: 20px;
+    background-image: url(../images/exhibition-footer.png);
+}
+
+.exhibition-search {
+    top: 30.2653vh;
+    right: 0;
+    left: 0;
+
+    width: 47.180vh;
+    height: 4.975vh;
+}
+
+.exhibition-search form {
+    width: 100%;
+    height: 100%;
+}
+
+.exhibition-search form input {
+    font-size: 2vh;
+
+    float: left;
+
+    width: 34vh;
+    height: 4.3vh;
+    padding-left: 1.9867vh;
+
+    color: #fff;
+    border: none;
+    background: none;
+}
+
+.exhibition-search form input:focus {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.exhibition-search form button {
+    font-size: 2.5vh;
+    font-weight: bold;
+
+    float: right;
+
+    width: 10.516vh;
+    height: 4.975vh;
+
+    border: none;
+    background: none;
+}
+
+.exhibition-content {
+    top: 36.8159vh;
+    right: 0;
+    left: 0;
+
+    width: 47.3466vh;
+    margin-bottom: 30px;
+}
+
+.exhibition-content-main {
+    margin-bottom: 1.6583vh;
+    padding-bottom: .8281vh;
+
+    border-bottom: 1px solid #009b85;
+}
+
+.exhibition-content-header {
+    width: 100%;
+    height: 4.3117vh;
+}
+
+.exhibition-content-header > div {
+    float: left;
+
+    width: 50%;
+    height: 4.3117vh;
+}
+
+.exhibition-content-header > div > p {
+    font-size: 2.3vh;
+    line-height: 4.3117vh;
+
+    display: inline-block;
+
+    margin: 0;
+    padding-left: 2vh;
+}
+
+.exhibition-content-header img {
+    float: left;
+
+    width: 4.3117vh;
+    height: 4.3117vh;
+}
+
+.exhibition-content-photo {
+    width: 100%;
+    height: auto;
+    margin-top: .8291vh;
+}
+
+.exhibition-content-photo > div {
+    float: left;
+
+    width: 50%;
+}
+
+.exhibition-content-photo > div img {
+    display: block;
+
+    width: 80%;
+    margin: 0 auto;
+
+    vertical-align: middle;
+
+    box-shadow: 0 0 2px #fff;
+}
+
+.exhibition-content-text {
+    width: 46.3466vh;
+    padding-right: .5vh;
+    padding-left: .5vh;
+}
+
+.exhibition-content-text > p {
+    font-size: 2vh;
+
+    width: 43.8466vh;
+    margin-top: .8291vh;
+    margin-bottom: .8291vh;
+    padding: 1.25vh;
+
+    color: #666;
+    background-color: #66c4b7;
+}
+
+.exhibition-content-footer {
+    width: 46.3466vh;
+    padding-left: 1vh;
+}
+
+.exhibition-content-footer > div {
+    float: left;
+
+    height: 3.3996vh;
+}
+
+.exhibition-content-footer img {
+    width: 1.99vh;
+    height: 1.99vh;
+
+    vertical-align: middle;
+}
+
+.exhibition-content-footer span.heart {
+    font-size: 1.99vh;
+    line-height: 3.3996vh;
+    background-image: url(../images/heart.png);
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    background-size: contain;
+}
+
+.exhibition-content-footer .voteHandler {
+    float: right;
+
+    width: 5.5555vh;
+    height: 3.3996vh;
+
+    border: none;
+    background-color: transparent;
+    background-image: url(../images/like.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+.exhibition-content-footer button:focus {
+    border: none;
+    outline: none;
+}
+
+.exhibition-content-footer:after,
+.exhibition-content-photo:after {
+    line-height: 0;
+
+    display: table;
+    clear: both;
+
+    content: '';
+}
+
+.exhibition-content-footer:before,
+.exhibition-content-photo:before {
+    line-height: 0;
+
+    display: table;
+
+    content: '';
+}
+
+.exhibition-no,
+.exhibition-no3 {
+    background-color: #66c4b7;
+}
+
+.exhibition-no-img,
+.exhibition-no3-img {
+    position: absolute;
+    top: 26.6169vh;
+    right: 0;
+    left: 0;
+
+    width: 45.5223vh;
+    height: 20.9784vh;
+    margin: 0 auto;
+}
+
+.exhibition-no-ico,
+.exhibition-no3-ico {
+    position: absolute;
+    top: 29.4311vh;
+    right: 10.6865vh;
+
+    width: 2.819vh;
+    height: 2.819vh;
+}
+
+/*share*/
+
+.page21 .title-cloud {
+    top: 7.8772vh;
+    right: .995vh;
+}
+
+.page21 .fish {
+    top: 9.7844vh;
+    right: 4.3946vh;
+}
+
+.page21-photo-1 {
+    top: 21vh;
+    left: 10vw;
+
+    width: 45vw;
+
+    -webkit-transform: rotateZ(-20deg);
+    transform: rotateZ(-20deg);
+}
+
+.page21-photo-2 {
+    top: 22vh;
+    right: 10vw;
+
+    width: 45vw;
+
+    -webkit-transform: rotateZ(15deg);
+    transform: rotateZ(15deg);
+}
+
+.page21-photo {
+    display: block;
+
+    width: 100%;
+    margin: auto;
+}
+
+.page21 .upload-aircraft {
+    bottom: 6.7993vh;
+    left: 1.4096vh;
+
+    width: 14.0961vh;
+    height: 22.6368vh;
+
+    background-image: url(../images/upload-aircraft.png);
+}
+
+.page21-title {
+    top: 12.1061vh;
+    right: 0;
+    left: 0;
+
+    width: 43.864vh;
+    height: 3.3167vh;
+
+    background-image: url(../images/page21-title.png);
+}
+
+.page21 .page21-btn {
+    right: 0;
+    bottom: 11.1840vh;
+    left: 0;
+
+    width: 20.7976vh;
+    height: 6.0481vh;
+
+    background-image: url(../images/page21-btn.png);
+}
+
+.page21 .page11-understand {
+    bottom: 3.2vh;
+
+    width: 20.7976vh;
+    height: 6.0481vh;
+}
+
+.page21-adopt-text {
+    width: 24.9585vh;
+    height: 1.9071vh;
+    right: 0;
+    bottom: 28vh;
+    left: 0;
+}
+
+.page21-adopt-text img {
+    width: 24.9585vh;
+    height: 1.9071vh;
+}
+
+.page21 .page21-adopt {
+    width: 20.7976vh;
+    height: 6.0481vh;
+    right: 0;
+    bottom: 19.1840vh;
+    left: 0;
+    background-image: url(../images/vote-a-btn.png);
+}
+
+.page21 .page21-no-adopt {
+    width: 20.7976vh;
+    height: 6.0481vh;
+    right: 0;
+    bottom: 19.1840vh;
+    left: 0;
+    background-image: url(../images/new-upload.png);
+}
+
+.page21-text {
+    right: 0;
+    bottom: 26vh;
+    left: 0;
+
+    width: 35.3233vh;
+    height: 15.9104vh;
+}
+
+.page21-text p {
+    margin: 5px 0;
+
+    text-align: center;
+}
+
+.page21-p1 {
+    font-size: 2vh;
+}
+
+.page21-p2 {
+    font-size: 2.4vh;
+}
+
+.page21-p3 {
+    font-size: 2.4vh;
+
+    color: #bd212b;
+}
+
+/*vote*/
+
+.page22-photo-1 {
+    top: 30vh;
+    left: 10vw;
+
+    max-width: 45vw;
+    max-height:40vh;
+
+    -webkit-transform: rotateZ(-20deg);
+    transform: rotateZ(-20deg);
+}
+
+.page22-photo-2 {
+    top: 27vh;
+    right: 10vw;
+
+    max-width: 45vw;
+    max-height:40vh;
+
+    -webkit-transform: rotateZ(15deg);
+    transform: rotateZ(15deg);
+}
+
+.page22-photo {
+    display: block;
+
+    width: 100%;
+    margin: auto;
+}
+
+.page22 .upload-aircraft {
+    bottom: 6.7993vh;
+    left: 1.4096vh;
+
+    width: 14.0961vh;
+    height: 22.6368vh;
+
+    background-image: url(../images/upload-aircraft.png);
+}
+
+.page22-title {
+    top: 11.1111vh;
+    right: 0;
+    left: 0;
+
+    width: 35.3233vh;
+    height: 11.6086vh;
+
+    background-image: url(../images/page22-title.png);
+}
+
+.page22 .vote-btn {
+    right: 0;
+    bottom: 10.1840vh;
+    left: 0;
+
+    width: 19.2371vh;
+    height: 6.6334vh;
+
+    background-image: url(../images/vote-btn.png);
+}
+
+.page22-footer {
+    right: 0;
+    bottom: 4.9601vh;
+    left: 0;
+
+    width: 40.6301vh;
+    height: 2.3217vh;
+
+    background-image: url(../images/page22-footer.png);
+}
+
+.page22-text {
+    right: 0;
+    bottom: 16.8175vh;
+    left: 0;
+
+    width: 35.3233vh;
+    height: 15.9104vh;
+}
+
+.page22-text p {
+    margin: 5px 0;
+
+    text-align: center;
+}
+
+.page22-p1 {
+    font-size: 2vh;
+}
+
+.page22-p2 {
+    font-size: 2.4vh;
+}
+
+.page22-p3 {
+    font-size: 2.4vh;
+
+    color: #bd212b;
+}
+
+.vote-a,
+.vote-b {
+    background-color: #66c4b7;
+}
+
+.vote-a-img {
+    position: absolute;
+    top: 26.6169vh;
+    right: 0;
+    left: 0;
+
+    width: 45.5223vh;
+    height: 20.9784vh;
+    margin: 0 auto;
+}
+
+.vote-a-btn,
+.vote-b-btn {
+    position: absolute;
+    top: 39.4311vh;
+    right: 0;
+    left: 0;
+
+    width: 25%;
+    margin: 0 auto;
+}
+
+/*turntable*/
+
+.page31 .title-cloud {
+    top: 7.8772vh;
+    right: .995vh;
+}
+
+.page31 .fish {
+    top: 9.7844vh;
+    right: 4.3946vh;
+}
+
+.page31 .upload-aircraft {
+    bottom: 6.7993vh;
+    left: 1.4096vh;
+
+    width: 14.0961vh;
+    height: 22.6368vh;
+
+    background-image: url(../images/upload-aircraft.png);
+}
+
+.page31 .leaf-first {
+    top: 49.7512vh;
+    left: 2.3217vh;
+}
+
+.page31 .turntable-main {
+    top: 19.0713vh;
+    right: 0;
+    left: 0;
+
+    overflow: hidden;
+
+    width: 50.4576vh;
+    max-width: 98%;
+    height: 50.4576vh;
+}
+
+.page31 .turntable-btn {
+    right: 0;
+    left: 0;
+
+    width: 50.4576vh;
+    max-width: 98%;
+    height: 50.4576vh;
+
+}
+
+.page31 .turntable-ico {
+    right: 0;
+    left: 0;
+
+    width: 50.4576vh;
+    max-width: 98%;
+    height: 50.4576vh;
+
+}
+
+.page31 .luck-btn {
+    right: 0;
+    bottom: 10.7794vh;
+    left: 0;
+
+    width: 25.2072vh;
+    height: 6.9651vh;
+
+    background-image: url(../images/luck-btn.png);
+}
+
+.page31-prize {
+    background-color: rgba(0, 0, 0, .68);
+}
+
+.page31-prize-img {
+    position: absolute;
+    top: 20.4809vh;
+    right: 0;
+    left: 0;
+
+    width: 53.0679vh;
+    height: 53.0679vh;
+    margin: 0 auto;
+}
+
+.page31-prize-close {
+    position: absolute;
+    top: 23.3vh;
+    right: 10.3598vh;
+
+    width: 2.8192vh;
+    height: 2.8192vh;
+}
+
+.page31-no {
+    background-color: #66c4b7;
+}
+
+.page31-no-img {
+    position: absolute;
+    top: 26.6169vh;
+    right: 0;
+    left: 0;
+
+    width: 45.5223vh;
+    height: 20.9784vh;
+    margin: 0 auto;
+}
+
+.page31-no-ico {
+    position: absolute;
+    top: 29.4311vh;
+    right: 10.6865vh;
+
+    width: 2.819vh;
+    height: 2.819vh;
+}
+
+/*turntable1*/
+
+.page32 .title-cloud {
+    top: 7.8772vh;
+    right: .995vh;
+}
+
+.page32 .fish {
+    top: 9.7844vh;
+    right: 4.3946vh;
+}
+
+.page32 .upload-aircraft {
+    bottom: 6.7993vh;
+    left: 1.4096vh;
+
+    width: 14.0961vh;
+    height: 22.6368vh;
+
+    background-image: url(../images/upload-aircraft.png);
+}
+
+.page32 .leaf-first {
+    top: 49.7512vh;
+    left: 2.3217vh;
+}
+
+.page32 .turntable-main {
+    top: 19.0713vh;
+    right: 0;
+    left: 0;
+
+    overflow: hidden;
+
+    width: 50.4576vh;
+    max-width: 98%;
+    height: 50.4576vh;
+}
+
+.turntable-main img {
+    transition-duration: 0s;
+}
+
+.page32 .turntable-btn {
+
+    max-width: 98%;
+
+}
+
+.page32 .turntable-ico {
+
+    max-width: 98%;
+
+}
+
+.page32 .luck-btn {
+    right: 0;
+    bottom: 10.7794vh;
+    left: 0;
+
+    width: 25.2072vh;
+    height: 6.9651vh;
+
+    background-image: url(../images/luck-btn.png);
+}
+
+.page32-prize {
+    background-color: rgba(0, 0, 0, .68);
+}
+
+.page32-prize-img {
+    position: absolute;
+    top: 20.4809vh;
+    right: 0;
+    left: 0;
+
+    width: 53.0679vh;
+    height: 53.0679vh;
+    margin: 0 auto;
+}
+
+.page32-prize-close {
+    position: absolute;
+    top: 23.3vh;
+    right: 10.3598vh;
+
+    width: 2.8192vh;
+    height: 2.8192vh;
+}
+
+/*最后一页*/
+.page41-center {
+    right: 0;
+    bottom: 14.4278vh;
+    left: 0;
+
+    width: 59.5356vh;
+    max-width: 98%;
+    height: 53.7313vh;
+
+    background-image: url(../images/page41-center.jpg);
+}
+
+.page41-title {
+    top: 10.2819vh;
+    right: 0;
+    left: 0;
+
+    width: 60.6965vh;
+    max-width: 98%;
+    height: 27.8606vh;
+
+    background-image: url(../images/page41-title.png);
+}
+
+.page41 .leaf-first {
+    top: 58.7064vh;
+    left: 2.7363vh;
+}
+
+.page41 .leaf-last {
+    top: 5.058vh;
+    right: 1.9071vh;
+}
+
+.page41 .aircraft {
+    top: 36.9817vh;
+    right: 0;
+    left: 0;
+}
+
+.page41-btn-1 {
+    right: 0;
+    bottom: 30.1824vh;
+    left: 0;
+
+    width: 22.4709vh;
+    height: 6.6334vh;
+
+    background-image: url(../images/understand-btn.png);
+}
+
+.page41-btn-2 {
+    right: 0;
+    bottom: 20.7296vh;
+    left: 0;
+
+    width: 22.4709vh;
+    height: 6.6334vh;
+
+    background-image: url(../images/page11-understand.png);
+}
+
+.page41-btn-3 {
+    right: 0;
+    bottom: 11.2769vh;
+    left: 0;
+
+    width: 22.4709vh;
+    height: 6.6334vh;
+
+    background-image: url(../images/participate-btn.png);
+}
+
+.page41-code {
+    background-color: rgba(0, 0, 0, .68);
+}
+
+.page41-code-img {
+    position: absolute;
+    top: 20.4809vh;
+    right: 0;
+    left: 0;
+
+    width: 45.5223vh;
+    height: 53.0679vh;
+    margin: 0 auto;
+}
+
+.page41-code-close {
+    position: absolute;
+    top: 23.3vh;
+    right: 10.3598vh;
+
+    width: 2.8192vh;
+    height: 2.8192vh;
+}
+
+.photo-border {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-image: url(../images/photo-border.png);
+}
+
+.upload-load{
+    position: fixed;
+    top:0;
+    width:100%;
+    height:100%;
+    z-index: 10000;
+    background-color: rgba(0, 0, 0, .68);
+}
+.upload-load-img{
+    position: absolute;
+    top: 26.6169vh;
+    right: 0;
+    left: 0;
+    width: 45.5223vh;
+    height: 20.9784vh;
+    margin: 0 auto;
+}
+.upload-load-ico{
+    position: absolute;
+    top: 31.5vh;
+    right: 0;
+    left: 0;
+    width: 5vh;
+    height: 5vh;
+    margin: 0 auto;
+    -webkit-animation: uploadloadico 2s infinite linear;
+    animation: uploadloadico 2s infinite linear;
+}
+
+@-webkit-keyframes uploadloadico {
+
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes uploadloadico {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+.photo-click-main{
+    width: 100vw;
+    height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
+    top: 0;
+    transform: rotateZ(0deg);
+    left: 0;
+    right: 0;
+}
+.photo-click-main-img{
+    max-width: 100vw!important;
+    max-height: 100vh!important;
+    top: 0;
+    transform: rotateZ(0deg);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: block;
+    position: absolute;
+}
+.photo-main div:first-child{
+    width:100%;
+    height:100%;
+}
+.photo-main{
+    background-color: #000;
+    -webkit-transition-duration: 0s; /* Safari 和 Chrome */
+    -moz-transition-duration: 0s; /* Firefox 4 */
+    -o-transition-duration: 0s;
+    transition-duration: 0s;
+}
+.photo-main img{
+    -webkit-transition-duration: 0s; /* Safari 和 Chrome */
+    -moz-transition-duration: 0s; /* Firefox 4 */
+    -o-transition-duration: 0s;
+    transition-duration: 0s;
+}
+.exhibition-content ul{
+    padding:0;
+}
+.exhibition-content .pagination li{
+    list-style: none;
+}
+.exhibition-content .pagination .btn-primary{
+    width: 19.0713vh;
+    height: 6vh;
+    display: block;
+    margin:0 auto;
+    background-image: url(../images/next-page.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+#infscr-loading img{
+    display: block;
+    margin:0 auto;
+}
+#infscr-loading div{
+    text-align: center;
+}

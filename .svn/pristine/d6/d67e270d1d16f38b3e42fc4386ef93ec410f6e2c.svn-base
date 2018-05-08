@@ -1,0 +1,53 @@
+/*
+Navicat MySQL Data Transfer
+
+Source Server         : 127.0.0.1
+Source Server Version : 50714
+Source Host           : 127.0.0.1:3306
+Source Database       : tongrentang
+
+Target Server Type    : MYSQL
+Target Server Version : 50714
+File Encoding         : 65001
+
+Date: 2017-11-24 18:28:41
+*/
+
+SET FOREIGN_KEY_CHECKS=0;
+
+-- ----------------------------
+-- Table structure for tbl_peixiao_stores
+-- ----------------------------
+DROP TABLE IF EXISTS `tbl_peixiao_stores`;
+CREATE TABLE `tbl_peixiao_stores` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键id',
+  `shop_name` varchar(100) NOT NULL DEFAULT '' COMMENT '店名',
+  `region` varchar(255) NOT NULL DEFAULT '' COMMENT '区域',
+  `address` varchar(255) NOT NULL DEFAULT '' COMMENT '地址',
+  `status` tinyint(4) NOT NULL DEFAULT '0' COMMENT '显示或隐藏；0-隐藏，1-显示',
+  `telephone` varchar(15) NOT NULL DEFAULT '',
+  `created_at` int(11) NOT NULL DEFAULT '0' COMMENT '添加时间',
+  `updated_at` int(11) NOT NULL DEFAULT '0' COMMENT '修改时间',
+  `created_by` int(11) NOT NULL DEFAULT '0' COMMENT '创建人',
+  `updated_by` int(11) NOT NULL DEFAULT '0' COMMENT '修改人',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COMMENT='配销网络店铺管理';
+
+-- ----------------------------
+-- Records of tbl_peixiao_stores
+-- ----------------------------
+INSERT INTO `tbl_peixiao_stores` VALUES ('1', '北京同仁堂粤东有限公司', '广东省、福建省、广西壮族自治区', '广东省潮州市饶平县黄冈镇清华路华涛园四栋', '1', '0768-8890083', '1511510635', '1511510635', '2', '2');
+INSERT INTO `tbl_peixiao_stores` VALUES ('2', '北京同仁堂合肥药店有限责任公司经营分公司', '安徽省、山东省、江苏省', '安徽省合肥市经济技术开发区医药健康产业园北京同仁堂合肥经营分公司', '1', '0551-65625452', '1511510665', '1511510665', '2', '2');
+INSERT INTO `tbl_peixiao_stores` VALUES ('3', '昆明鸿成药业有限公司', '云南省、贵州省', '昆明市高新区昌源中路19号', '1', '0871-68189337', '1511510700', '1511510700', '2', '2');
+INSERT INTO `tbl_peixiao_stores` VALUES ('4', '江西康成药业有限公司', '江西省', '江西省樟树市仁和东路68号', '1', '0795-7841888', '1511510743', '1511510743', '2', '2');
+INSERT INTO `tbl_peixiao_stores` VALUES ('5', '北京同仁堂广州药业连锁有限公司', '海南省、自有连锁药店', '广州市越秀区农林下路121号六楼', '1', '020-87762050', '1511510827', '1511510827', '2', '2');
+INSERT INTO `tbl_peixiao_stores` VALUES ('6', '北京同仁堂山西药业有限责任公司', '山西省、河北省、陕西省、内蒙古自治区西部', '山西省太原市小店区南中环桥东清控创新基地D座17层', '1', '0351-7035620', '1511510864', '1511510864', '2', '2');
+INSERT INTO `tbl_peixiao_stores` VALUES ('7', '北京同仁堂河南药业有限责任公司', '河南省', '河南省郑州市城东路兴亚商务506室', '1', '0371-6335873', '1511510893', '1511510893', '2', '2');
+INSERT INTO `tbl_peixiao_stores` VALUES ('8', '辽宁同仁药业有限公司', '辽宁省、吉林省、黑龙江省、内蒙古自治区东部', '辽宁省沈阳市铁西区工北街106号', '1', '024-25841166', '1511510924', '1511511257', '2', '2');
+INSERT INTO `tbl_peixiao_stores` VALUES ('9', '甘肃同仁药业有限公司', '甘肃省、宁夏回族自治区、青海省', '甘肃省兰州市安宁区城临路21号', '1', '0931-4286999', '1511510954', '1511511282', '2', '2');
+INSERT INTO `tbl_peixiao_stores` VALUES ('10', '浙江众成药业有限公司', '浙江省', '杭州市西湖区紫霞街176号互联网创新创业园1号楼1101', '1', '13165999699', '1511510983', '1511510983', '2', '2');
+INSERT INTO `tbl_peixiao_stores` VALUES ('11', '上海蔡同德药业有限公司', '上海市', '上海市徐汇区复兴西路37弄2号', '1', '021-55217323', '1511511013', '1511511013', '2', '2');
+INSERT INTO `tbl_peixiao_stores` VALUES ('12', '天津医药集团太平医药有限公司第二药品分公司', '天津市', '天津市河北区南口路，荣泽大厦，2号楼，1908室', '1', '15502269489', '1511511041', '1511511041', '2', '2');
+INSERT INTO `tbl_peixiao_stores` VALUES ('13', '湖南名裕龙行医药销售有限公司', '湖南省、湖北省', '湖南省长沙县湘龙街道雷公岭路36号湖南星瑞物流产业发展有限公司五楼', '1', '0731-86189176', '1511511069', '1511511069', '2', '2');
+INSERT INTO `tbl_peixiao_stores` VALUES ('14', '华润重庆医药有限公司', '重庆市', '重庆市南岸区茶园牡丹路14号', '1', '023-86355873', '1511511103', '1511511103', '2', '2');
+INSERT INTO `tbl_peixiao_stores` VALUES ('15', '新疆昌吉神瑞药业有限公司', '新疆自治区', '新疆昌吉北京南路80号', '1', '0994-2713967', '1511511133', '1511511133', '2', '2');

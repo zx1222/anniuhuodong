@@ -1,0 +1,63 @@
+<?php
+
+namespace app\modules\anniuyuandan2018\controllers;
+
+use Yii;
+use yii\web\Controller;
+use yii\helpers\Url;
+
+
+use app\modules\anniuyuandan2018\models\User;
+
+
+class OauthController extends Controller
+{
+    /**
+     * Renders the index view for the module
+     * @return string
+     */
+    public function actionIndex($open_id = '', $forword)
+    {
+        $openId = $open_id;
+        if (YII_ENV_DEV) {
+            $openId = 'o_P7SwLw3vgSa9dhkgHMDiaDskqk';//todo
+        }
+        if (empty($openId)) {
+            return $this->redirect(Yii::$app->exchange->getOauthUrl(urlencode(Url::current(['forword' => $forword], true))));
+
+        } else {
+            $userInfo = Yii::$app->exchange->getUserInfo($openId);
+            if (isset($userInfo['open_id'])) {
+                $user = User::findIdentity($openId);
+
+                if (empty($user)) {
+                    $user = new User();
+                    $user->openid = $openId;
+                    $user->ip = Yii::$app->request->userIP;
+                    if (isset($userInfo['user'])) {
+                        $user->wx_username = $userInfo['user']['nickname'] ? $userInfo['user']['nickname'] : '';
+                        $user->wx_avatar = $userInfo['user']['avatar'] ? $userInfo['user']['avatar'] : '';
+                        $user->wx_sex = $userInfo['user']['sex'] ? $userInfo['user']['sex'] : 0;
+                        $user->wx_country = $userInfo['user']['country'] ? $userInfo['user']['country'] : '';
+                        $user->wx_province = $userInfo['user']['province'] ? $userInfo['user']['province'] : '';
+                        $user->wx_subscribe = $userInfo['user']['subscribe_time'] > 0 ? 1 : 0;
+                        $user->wx_city = $userInfo['user']['city'] ? $userInfo['user']['city'] : '';
+                    }
+
+                    if ($user->save() !== true) {
+
+                        print_r($user->errors);
+                    }
+                }
+
+                Yii::$app->user->logout();
+
+                Yii::$app->user->login($user, 7200);
+                return $this->redirect(urldecode($forword));
+            } else {
+                echo '该用户不存在';
+            }
+        }
+    }
+
+}

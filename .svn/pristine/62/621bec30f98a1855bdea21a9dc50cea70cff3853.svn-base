@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>安牛元旦</title>
+    <meta name="viewport"
+          content="width=device-width,user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <!--强制竖屏-->
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="x5-page-mode" content="app">
+
+    <link rel="stylesheet" href="assets/css/index.min.css">
+
+</head>
+<body>
+<div class="home">
+    <img class="logo" src="assets/images/logo.png">
+    <ul id="scene">
+        <li class="layer" data-depth="0.3"><img class="light1 light transition" src="assets/images/light.png"></li>
+        <li class="layer" data-depth="0.6"><img class="light2 light transition" src="assets/images/light.png"></li>
+        <li class="layer" data-depth="0.2"><img class="clould-left" src="assets/images/clould-left.png"></li>
+        <li class="layer" data-depth="0.5"><img class="clould-right" src="assets/images/clould-right.png"></li>
+        <li class="layer" data-depth="0.5"><img class="tree-left" src="assets/images/tree-left.png"></li>
+        <li class="layer" data-depth="0.4"><img class="tree-right" src="assets/images/tree-right.png"></li>
+        <li class="layer" data-depth="0.6"><img class="clould" src="assets/images/clould.png"></li>
+    </ul>
+
+
+    <div class="s1 text-yellow text-ppt">辛苦一年了！别忘记——</div>
+    <p class="text-l2 solgan1 text-red solgan text-ganlan">善待自己<span class="text-m"> 更要</span></p>
+    <p class="text-l1 solgan2 text-red solgan text-ganlan">关爱家人</p>
+
+    <!--半透明遮罩-->
+    <div class="mask"></div>
+
+    <!--红包-->
+    <div class="packet">
+        <img class="packet-clould1" src="assets/images/packet-clould1.png">
+        <img class="mark" src="assets/images/mark.png">
+        <img class="red-packet" src="assets/images/red-packet.png">
+        <div class="packet-header">
+            <img class="packet-header-front" src="assets/images/packet-header1.png">
+            <img class="packet-header-back" src="assets/images/packet-header2.png">
+        </div>
+        <img class="icon-up shaking" src="assets/images/icon-up.png">
+        <p class="text-ganlan text-yellow s2 text-center">送元气加油包啦!</p>
+        <p class="text-ppt text-yellow s3 text-center">上划看看</p>
+        <img class="packet-clould2" src="assets/images/packet-clould2.png">
+        <p class="text-ganlan text-yellow s4 text-center btn-toDraw" style="display: none">点击抽取<br>元气加油包</p>
+    </div>
+
+
+    <!--转盘-->
+    <div class="turntable">
+        <img class="turntablePanle" src="assets/images/turntable.png">
+        <img class="turntable-icon" src="assets/images/turntable-icon.png">
+        <img class="btn-draw" src="assets/images/btn-draw.png">
+    </div>
+
+    <!--抽奖结果-->
+    <div class="prize">
+        <img class="p1" src="assets/images/prize01.png">
+        <!--中奖-->
+        <div class="win" style="display: none">
+            <img class="prizebg01" src="assets/images/prize02.png">
+            <ul class=" text-ppt text-lightYellow">
+                <li>扫</li>
+                <li>码</li>
+                <li>打</li>
+                <li>开</li>
+                <li>领</li>
+                <li>取</li>
+                <li>通</li>
+                <li>道</li>
+            </ul>
+            <img class="code1" src="assets/images/code01.png">
+            <div class="prizeContent">
+                <h1 class="text-lightYellow text-m text-ppt">恭喜您获得</h1>
+                <p class="text-lightYellow text-l2 text-ganlan"><span>1</span>元红包</p>
+            </div>
+        </div>
+        <div class="noWin">
+            <img class="prizebg02" src="assets/images/prize03.png">
+            <ul class=" text-ppt text-lightYellow">
+                <li>扫</li>
+                <li>码</li>
+                <li>持</li>
+                <li>续</li>
+                <li>关</li>
+                <li>注</li>
+                <li>活</li>
+                <li>动</li>
+            </ul>
+            <img class="code1" src="assets/images/code01.png">
+            <div class="prizeContent">
+                <p class="text-lightYellow text-ppt text-center">给2018的你</p>
+                <p class="text-ganlan text-lightYellow text-center">一年365天，中间不过酸甜苦辣咸五种滋味。新的一年里，只希望你甜蜜的日子更多一些~</p>
+            </div>
+            <a class="btn-close" href="backcover.html"><img src="assets/images/btn-close.png"></a>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.rotate.min.js"></script>
+<script src="assets/js/index.js"></script>
+<script src="assets/js/parallax.js"></script>
+<script>
+    $('#scene').parallax({
+        calibrateX: false,
+        calibrateY: true,
+        invertX: false,
+        invertY: true,
+        limitX: false,
+        limitY: 10,
+        scalarX: 2,
+        scalarY: 8,
+        frictionX: 0.2,
+        frictionY: 0.8
+    });
+
+    $('.packet-header-front').click(function () {
+        $('.packet-header').addClass('flipped')
+    })
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,933 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    position: fixed;
+}
+
+img {
+    vertical-align: middle;
+    border: 0;
+    outline: 0;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+/*动画*/
+
+@keyframes slideOutRight {
+    from {
+        /*transform: translate3d(0, 0, 0);*/
+    }
+    to {
+        right: -45%;
+        /*transform: translate3d(40%, 0, 0);*/
+    }
+}
+
+.slideOutRight {
+    animation: slideOutRight 1.2s linear 1;
+    -webkit-animation: slideOutRight 1.2s linear 1;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes slideOutLeft {
+    from {
+        /*transform: translate3d(0, 0, 0);*/
+    }
+    to {
+        left: -45%;
+        /*transform: translate3d(-100%, 0, 0);*/
+    }
+}
+
+.slideOutLeft {
+    animation: slideOutLeft 1.2s linear 1;
+    -webkit-animation: slideOutLeft 1.2s linear 1;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes bounceOutUp {
+    20% {
+        transform: translate3d(0, -10px, 0);
+    }
+    40%,
+    45% {
+        opacity: 1;
+        transform: translate3d(0, 20px, 0);
+    }
+    to {
+        opacity: 0;
+        transform: translate3d(0, -2000px, 0);
+    }
+}
+
+.bounceOutUp {
+    animation: bounceOutUp 1.2s linear 1;
+    -webkit-animation: bounceOutUp 1.2s linear 1;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes bounceInDown {
+    from, 60%, 75%, 90%, to {
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -3000px, 0);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translate3d(0, 25px, 0);
+    }
+
+    75% {
+        opacity: 1;
+        transform: translate3d(0, -10px, 0);
+    }
+
+    90% {
+        opacity: 1;
+        transform: translate3d(0, 5px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.bounceInDown {
+    animation: bounceInDown 1s linear 1;
+    -webkit-animation: bounceInDown 1s linear 1;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes fadeOutLeft {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+.fadeOutLeft {
+    animation: fadeOutLeft 1s linear 1;
+    -webkit-animation: fadeOutLeft 1s linear 1;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes fadeOutRight {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+}
+
+.fadeOutRight {
+    animation: fadeOutRight 1s linear 1;
+    -webkit-animation: fadeOutRight 1s linear 1;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 1s linear 1;
+    -webkit-animation: fadeIn 1s linear 1;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeInLeft {
+    animation: fadeInLeft .8s linear 1s 1;
+    -webkit-animation: fadeInLeft .8s linear .8s 1;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeInRight {
+    animation: fadeInLRight .8s linear 1.6s 1;
+    -webkit-animation: fadeInRight .8s linear 1.6s 1;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+.swiper-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+
+/*动画结束*/
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+/*首页*/
+.container.home, .container.share {
+    background: url("../images/home-bg.jpg");
+    background-size: 100% 100%;
+}
+
+/*封皮部分*/
+.home > .cover, .share > .cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+/*屋檐*/
+.home > .cover > img:nth-child(1), .share > .cover > img:nth-child(1) {
+    position: absolute;
+    width: 100%;
+    top: 4%;
+    left: 0;
+    z-index: 2;
+}
+
+/*门左*/
+.home > .cover > img:nth-child(2), .share > .cover > img:nth-child(2) {
+    position: absolute;
+    width: 50%;
+    bottom: 0;
+    left: 0;
+}
+
+/*门右*/
+
+.home > .cover > img:nth-child(3), .share > .cover > img:nth-child(3) {
+    position: absolute;
+    width: 50%;
+    bottom: 0;
+    right: 0;
+}
+
+/*后宫大选牌匾*/
+
+.home > .cover > img:nth-child(4), .share > .cover > img:nth-child(4) {
+    position: absolute;
+    width: 84%;
+    left: 9%;
+    top: 17%
+}
+/*slogan*/
+.home > .cover > img:nth-child(5), .share > .cover > img:nth-child(5) {
+    position: absolute;
+    width: 80%;
+    top: 38%;
+    left: 10%;
+}
+.home > .cover > .door-dialogue1 {
+    position: absolute;
+    width: 34%;
+    bottom: 22%;
+    left: 6%;
+    opacity: 0;
+}
+
+.home > .cover > .door-dialogue2 {
+    position: absolute;
+    width: 15%;
+    bottom: 37%;
+    right: 7%;
+    opacity: 0;
+}
+
+
+/*开始按钮*/
+.home > .cover > .start, .share > .cover > .start {
+    position: absolute;
+    display: block;
+    width: 42%;
+    right: 29%;
+    bottom: 6%;
+}
+
+.home > .cover > .start > img, .share > .cover > .start > img {
+    width: 100%;
+    height: 100%;
+}
+
+/*封皮部分结束*/
+
+/*规则遮罩*/
+
+.home .regulation, .share .regulation {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3
+}
+
+.home .regulation > img:nth-child(1), .share .regulation > img:nth-child(1) {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.home .regulation > img:nth-child(2) {
+    position: absolute;
+    width: 30%;
+    left: 35%;
+    bottom: 20%
+}
+
+.share .regulation > img:nth-child(2) {
+    position: absolute;
+    width: 34%;
+    left: 33%;
+    bottom: 20%
+}
+
+/*规则遮罩结束*/
+.home .dialogues {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.home > .dialogues > .icon-harem {
+    position: absolute;
+    width: 26%;
+    height: 100px;
+    top: 4%;
+    right: 4%;
+    display: inline-block;
+    opacity: 0;
+    z-index: 3;
+}
+
+.home > .dialogues > .icon-harem > img {
+    width: 100%;
+}
+
+.home .dialogues > img:nth-child(2) {
+    position: absolute;
+    width: 68%;
+    left: 13%;
+    top: 26%;
+}
+
+.home .dialogues > img:nth-child(3) {
+    position: absolute;
+    width: 69%;
+    right: 13%;
+    top: 41%;
+}
+
+.home .dialogues > img:nth-child(4) {
+    position: absolute;
+    width: 61%;
+    left: 13%;
+    top: 56%;
+}
+
+/*对话部分*/
+/*对话部分结束*/
+
+/*标签部分*/
+/*标签*/
+.home > .tags, .share > .tags {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+/*我的后宫*/
+.home > .tags .icon-harem {
+    position: absolute;
+    width: 26%;
+    height: 100px;
+    top: 4%;
+    right: 4%;
+    display: inline-block;
+    opacity: 0;
+}
+
+.home > .tags .icon-harem > img {
+    width: 100%;
+}
+
+.home > .tags > .text-select {
+    position: absolute;
+    width: 46%;
+    left: 26%;
+    top: 20%;
+}
+
+.share > .tags > .text-select {
+    position: absolute;
+    width: 62%;
+    left: 19%;
+    top: 20%;
+}
+
+.home > .tags > .content, .share > .tags > .content {
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    height: 62%;
+    top: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: scroll;
+}
+.home > .tags > .content::-webkit-scrollbar, .share > .tags > .content::-webkit-scrollbar{
+    display: none;
+}
+
+.home > .tags > .content > .tag, .share > .tags > .content > .tag {
+    width: 16%;
+    height: 38px;
+    border-radius: 5px;
+    background: #d02525;
+    color: #dde9a6;
+    font-size: 12px;
+    line-height: 38px;
+    text-align: center;
+    margin: 3px 3px;
+}
+
+/*标签选中*/
+.home > .tags > .content > .tag.active, .share > .tags > .content > .tag.active {
+    box-shadow: 0 0 0 2px #dde9a6 inset;
+    background: #fb7b7b;
+}
+
+/*标签结束*/
+/*遮罩*/
+.home > .tags > .shade {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+
+.home > .tags > .shade > img:nth-child(1) {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.home > .tags > .shade > img:nth-child(2) {
+    position: absolute;
+    width: 22%;
+    left: 39%;
+    top: 53%;
+}
+
+/*表单*/
+.home > .tags > .btn-chosen, .share > .tags > .btn-chosen {
+    position: absolute;
+    width: 26%;
+    left: 37%;
+    bottom: 5%;
+}
+
+.home > .tags > form > .submit-tags, .share > .tags > form > .submit-tags {
+    position: absolute;
+    width: 26%;
+    left: 37%;
+    bottom: 5%;
+    opacity: 0;
+    z-index: 2;
+    height: 35px;
+}
+
+/*表单结束*/
+/*标签部分结束*/
+
+/*后宫部分开始*/
+.container.harem {
+    background: url("../images/bg.jpg");
+    background-size: 100% 100%;
+}
+
+/*后宫为空*/
+.harem > .empty, .harem > .notempty {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.harem > .empty > img:nth-child(1), .harem > .notempty > img:nth-child(1) {
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    top: 23%
+}
+
+.harem > .empty > img:nth-child(2) {
+    position: absolute;
+    width: 70%;
+    left: 15%;
+    top: 40%
+}
+
+.harem .btn-invite {
+    position: absolute;
+    width: 30%;
+    left: 35%;
+    bottom: 10%
+}
+
+/*邀请*/
+.harem .invite-friend {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.harem .invite-friend > img:nth-child(1) {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.harem .invite-friend > .btn-share {
+    position: absolute;
+    width: 24%;
+    left: 38%;
+    top: 53%;
+}
+
+.share-shade {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+/*拥有抽奖机会*/
+.harem .opportunities {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.harem .opportunities > img:nth-child(1) {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.harem .opportunities > a {
+    position: absolute;
+    width: 26%;
+    left: 37%;
+    top: 53%;
+    display: inline-block;
+}
+
+.harem .opportunities > a > .btn-flipCard {
+    width: 100%;
+}
+
+/*后宫为空结束*/
+/*后宫不为空*/
+.harem > .notempty > .content {
+    position: absolute;
+    width: 74%;
+    height: 46%;
+    left: 13%;
+    top: 36%;
+    overflow: scroll;
+}
+.harem > .notempty > .content::-webkit-scrollbar{
+    display: none;
+}
+
+
+.harem > .notempty > .content > .box {
+    width: 100%;
+    height: 54px;
+    padding: 5px 0;
+    border-bottom: 1px solid #535353;
+    font-size: 16px;
+    color: #f8eee4;
+    align-items: center;
+    justify-content: center;
+}
+
+.harem > .notempty > .content > .box .l {
+    width: calc(20% - 10px);
+    height: calc(100% - 16px);
+    float: left;
+    padding: 5px 5px 5px 0;
+    position: relative;
+}
+
+.harem > .notempty > .content > .box .l > img {
+    position: absolute;
+    width: 82%;
+    overflow: hidden;
+}
+
+.harem > .notempty > .content > .box .r {
+    width: calc(80% - 10px);
+    height: 100%;
+    float: left;
+    line-height: 25px;
+}
+
+/*后宫不为空结束*/
+/*后宫部分结束*/
+
+/*抽奖部分开始*/
+.container.lottery,.lottery .swiper-slide{
+    background: url("../images/bg.jpg");
+    background-size: 100% 100%;
+}
+
+.lottery .swiper-slide:nth-child(1) > img:nth-child(1) {
+    position: absolute;
+    width: 56%;
+    left: 23%;
+    top: 22%;
+}
+
+.lottery .swiper-slide:nth-child(1) > .cards {
+    position: relative;
+    width: 76%;
+    height: 60%;
+    margin-left: 13%;
+    margin-top: 43%;
+
+}
+
+.lottery .swiper-slide:nth-child(1) > .cards > .card {
+    /*position: absolute;*/
+    margin-left: 7%;
+    width: 24%;
+    float: left;
+    margin-top: 40px;
+}
+
+/*中奖及未中奖遮罩*/
+.lottery .swiper-slide:nth-child(1) > .win, .lottery .swiper-slide:nth-child(1) > .noWin {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+.lottery .swiper-slide:nth-child(1) > .win > img:nth-child(1), .lottery .swiper-slide:nth-child(1) > .noWin > img:nth-child(1) {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.lottery .swiper-slide:nth-child(1) > .win > img:nth-child(2) {
+    position: absolute;
+    width: 24%;
+    left: 38%;
+    top: 70%
+}
+.lottery .swiper-slide:nth-child(1) > .win > .prizeContent {
+    color: #c03b3c;
+    position: absolute;
+    width: 250px;
+    top: 35%;
+    left: calc(50% - 125px);
+    text-align: center;
+    font-size: 20px;
+}
+.lottery .swiper-slide:nth-child(1) > .win > .prizeName {
+    color: #c03b3c;
+    position: absolute;
+    width: 250px;
+    top: 39%;
+    left: calc(50% - 125px);
+    text-align: center;
+    font-size: 18px;
+
+}
+.lottery .swiper-slide:nth-child(1) > .win >.prizeImg{
+    position: absolute;
+    width: 180px;
+    height: 140px;
+    top: 45%;
+    left: calc(50% - 85px);
+}
+
+.lottery .swiper-slide:nth-child(1) > .noWin > .btn-know {
+    position: absolute;
+    width: 30%;
+    left: 35%;
+    bottom: 23%;
+}
+
+/*中奖及未中奖遮罩结束*/
+
+/*中奖填写信息*/
+.lottery .swiper-slide:nth-child(2) > img:nth-child(1) {
+    position: absolute;
+    width: 54%;
+    left: 23%;
+    top: 23%;
+}
+
+.lottery .swiper-slide:nth-child(2) form {
+    position: absolute;
+    width: 70%;
+    height: 68%;
+    left: 15%;
+    top: 32%;
+}
+
+.lottery .swiper-slide:nth-child(2) form > label {
+    display: block;
+    font-size: 18px;
+    color: #eefcae;
+    margin-bottom: 5px;
+}
+
+.lottery .swiper-slide:nth-child(2) form input, .lottery .swiper-slide:nth-child(2) form textarea {
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.lottery .swiper-slide:nth-child(2) form input {
+    height: 35px;
+}
+
+.lottery .swiper-slide:nth-child(2) form textarea {
+    height: 65px;
+}
+
+.lottery .swiper-slide:nth-child(2) form .submit {
+    position: absolute;
+    width: 36%;
+    left: 32%;
+    bottom: 9%;
+    z-index: 2;
+    opacity: 0;
+}
+
+.lottery .swiper-slide:nth-child(2) .btn-submit {
+    position: absolute;
+    width: 26%;
+    left: 37%;
+    bottom: 9%;
+}
+
+/*中奖填写信息结束*/
+
+/*产品页*/
+.lottery .swiper-slide:nth-child(3) > img:nth-child(1) {
+    position: absolute;
+    width: 74%;
+    left: 13%;
+    top: 22%
+}
+
+.lottery .swiper-slide:nth-child(3) > img:nth-child(2) {
+    position: absolute;
+    width: 60%;
+    left: 20%;
+    top: 43%
+}
+
+.lottery .swiper-slide:nth-child(3) > img:nth-child(3) {
+    position: absolute;
+    width: 36%;
+    left: 32%;
+    bottom: 16%
+}
+
+.lottery .swiper-slide:nth-child(3) > img:nth-child(4) {
+    position: absolute;
+    width: 36%;
+    left: 32%;
+    bottom: 8%
+}
+
+/*产品页结束*/
+/*抽奖部分结束*/
+
+/*分享给好友的贴标签*/
+.share .right, .share .wrong {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.share .right > img:nth-child(1) {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.share .right > .btn-flipCard {
+    position: absolute;
+    width: 22%;
+    left: 39%;
+    top: 53%;
+    display: inline-block;
+}
+
+.share .right > .btn-flipCard > img {
+    width: 100%;
+}
+
+.share .wrong > img:nth-child(1) {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.share .wrong > img:nth-child(2) {
+    position: absolute;
+    width: 34%;
+    left: 33%;
+    top: 50%;
+}
+
+.share .wrong > .btn-buildHarem {
+    position: absolute;
+    width: 34%;
+    left: 33%;
+    top: 56%;
+    display: block;
+}
+
+.share .wrong > .btn-buildHarem > img {
+    width: 100%;
+}
+.share .tags>.btn-buildHarem{
+    position: absolute;
+    bottom: 5%;
+    width: 36%;
+    left: 32%;
+}
+.share .tags>.btn-buildHarem>img{
+    width: 100%;
+}
+/*分享给好友的贴标签结束*/
+/*适配*/
+@media screen and (min-width: 320px) and (max-width: 359px) {
+    /*!*iPhone < 5 Portrait*!*/
+    .harem > .notempty > .content > .box .l > img {
+        width: 95%;
+    }
+
+    .harem > .notempty > .content > .box .r {
+        padding-left: 10px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 374px) {
+    /*!*iPhone < 5 Portrait*!*/
+
+}
+
+@media screen and (min-width: 375px) and (max-width: 411px) {
+    /*!*iPhone 6*!*/
+
+}
+
+@media screen and (min-width: 412px) and (max-width: 736px) {
+    /*!*iPhone 6+ Portrait*!*/
+
+}
+
+/*6*/
+@media (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/*6+*/
+@media (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+    .harem > .notempty > .content > .box .l {
+        width: calc(18% - 10px);
+    }
+}

@@ -1,0 +1,417 @@
+body{
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	position: fixed;
+}
+/*canvas{*/
+	 /*width: 44.693vh;*/
+ /*}*/
+@-webkit-keyframes twinkling{   /*透明度由0到1*/
+   
+    0%{
+    opacity:.6; /*透明度为1*/
+    }
+    50%{
+    opacity:.2; /*透明度为1*/
+    }
+     100%{
+    opacity:.6; /*透明度为1*/
+    }
+    }
+#arrow {
+	position: fixed;
+	bottom: 4vh;
+	right: 0;
+	left: 0;
+	margin: auto;
+	z-index: 9;
+}
+#arrow img{
+	display: block;
+	margin: 0 auto;
+	width: 13%;
+	-webkit-animation:twinkling 2s infinite ease-in-out;
+}
+.wrapper{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0%;
+}
+.page-logo {
+	position: fixed;
+	top:4.145vh;
+	left: 7.877vh;
+	z-index: 9;
+
+	width: 32.825vh;
+	height: auto;
+}
+.page {
+	background-image: url("../images/background.png");
+	background-size: 100%;
+}
+.page{
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.page .page-img {
+	height: 100%;
+	width: 100%;
+}
+.page2 .person,
+.page2 .barrow_1,
+.page2 .barrow_2,
+.page2 .barrow_3,
+.page2 .peach,
+.page2 .beautiful,
+.page2 .niu,
+.page2 .wasai,
+.page2 .pretty,
+.page2 .drunk,
+.page2 .notext,
+.page2 .sweat,
+.page2 .protry{
+	position: absolute;
+}
+.page2 .person {
+	z-index: 5;
+}
+.page2 .peach {
+	z-index: 6;
+}
+.page2 .sweat {
+	z-index: 6;
+}
+.page2 .beautiful{
+	right: 14.925vh;
+	bottom: 55.706vh;
+	width: 11.442vh;
+	height: auto;
+}
+.page2 .niu {
+	bottom: 55.706vh;
+	right: 29.850vh;
+	width: 7.711vh;
+	height: auto;
+}
+.page2 .pretty{
+	bottom: 61.706vh;
+	right: 8.54vh;
+	width: 15.588vh;
+	height: auto;
+}
+.page2 .wasai{
+	right: 26.533vh;
+	bottom: 61.706vh;
+	width: 16.417vh;
+	height: auto;
+}
+.page2 .drunk{
+	top:20.563vh;
+	right: 16.998vh;
+	width: 14.510vh;
+	height: auto;
+}
+.page2 .notext {
+	bottom: 66.334vh;
+	left: 7.462vh;
+	width: 37.396vh;
+	height: auto;
+}
+.page2 .peach,
+.page2 .sweat{
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.page2 .prot {
+	position: absolute;
+	top:12.271vh;
+	right: 4vh;
+	width: 0;
+	max-width: 47.55vh;
+	height: 32.918vh;
+	overflow: hidden;
+}
+.page2 .protry{
+	position: absolute;
+	top:0;
+	right: 0;
+	min-width: 47.55vh;
+	height: 32.918vh;
+}
+.page3 .begin {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 11.44vh;
+	margin: auto;
+	width: 29.6vh;
+	height:  auto;
+
+	-webkit-animation:twinkling 1s infinite ease-in-out;
+}
+.page4 .answer_bg {
+	position: absolute;
+	top:23.68vh;
+	left: 0;
+	right: 0;
+
+	width: 51.82vh;
+	height: auto;
+	margin: auto;
+}
+.page4 .answer_number {
+	position: absolute;
+	top:15.754vh;
+	left: 0;
+	right:0;
+
+	width: 16.32vh;
+	padding-left: 0;
+	text-align: center;
+	margin: auto;
+}
+.page4 .answer_number li {
+	color: #63585d;
+	float: left;
+	font-size: 26px;
+	line-height: 2.5vh;
+	width: 4vh;
+	height: 4vh;
+	border: 2px solid #978870;
+	border-right:none;
+	background-color: #fdfad8;
+	list-style: none;
+	padding: 3px;
+}
+@media (max-width: 320px) {
+	.page4 .answer_number li {
+		font-size: 18px;
+		line-height: 13px;
+	}
+}
+.page4 .answer_img {
+	position: absolute;
+	top:25.87vh;
+	right: 0;
+	left: 0;
+	width: 40vh;
+}
+.page4 .checkbox {
+	position: absolute;
+	right: 0;
+	bottom: 33.87vh;
+	left: 0;
+
+	width: 21.39vh;
+	margin: auto;
+}
+.page4 .checkbox .label_first{
+	margin-bottom: 5.38vh;
+}
+.page4 .checkbox label img {
+	margin-top: 2px;
+}
+.page4 .checkbox input {
+	border-color: #85685b;
+}
+.page4 .answer_logo {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 9.618vh;
+	width: 51.82vh;
+	height: auto;
+	margin: auto;
+}
+.animated {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both
+}
+@-webkit-keyframes bounceOutLeft {
+	20% {
+		opacity: 1;
+		-webkit-transform: translate3d(20px, 0, 0);
+		transform: translate3d(20px, 0, 0)
+	}
+	100% {
+		opacity: 0;
+		-webkit-transform: translate3d(-2000px, 0, 0);
+		transform: translate3d(-2000px, 0, 0)
+	}
+}
+
+@keyframes bounceOutLeft {
+	20% {
+		opacity: 1;
+		-webkit-transform: translate3d(20px, 0, 0);
+		transform: translate3d(20px, 0, 0)
+	}
+	100% {
+		opacity: 0;
+		-webkit-transform: translate3d(-2000px, 0, 0);
+		transform: translate3d(-2000px, 0, 0)
+	}
+}
+
+.bounceOutLeft {
+	-webkit-animation-name: bounceOutLeft;
+	animation-name: bounceOutLeft
+}
+
+.page5 .no-lottery,.page3 .over{
+	position: absolute;
+	top:20.149vh;
+	right: 0;
+	left: 0;
+	width: 51.824vh;
+	height: auto;
+	margin: auto;
+}
+.page5 .rework,.page3 .close {
+	position: absolute;
+	right: 0;
+	bottom: 13.432vh;
+	left: 0;
+
+	width: 44.693vh;
+	height: auto;
+	margin: auto;
+	opacity: 1;
+}
+.page6 .lottery {
+	position: absolute;
+	top:20.149vh;
+	right: 0;
+	left: 0;
+
+	width: 51.824vh;
+	height: auto;
+	margin: auto;
+	opacity: 1;
+}
+#main{
+	position: absolute;
+	
+}
+.demo{margin:10px auto 20px auto;}
+
+.page6 .scrape,
+.page6 .thank{
+	position: absolute;
+	right: 0;
+	bottom:  13.432vh;
+	left: 0;
+
+	width: 44.693vh;
+	height: auto;
+	margin: auto;
+}
+.page6 .activity {
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom:24vh;
+
+	width: 31.334vh;
+	height: auto;
+	margin: auto; 
+}
+/*分享朋友圈遮罩层*/
+.bg{ display: none; position: absolute; top: 0%; left: 0%; width: 100%; height: 100%; background-color: black; z-index:1001; -moz-opacity: 0.7; opacity:.70; filter: alpha(opacity=70);}
+.popup{ display: none; position: absolute; top: 0%; left: 0%; width: 100%; height: 100%; z-index:1001; }
+.mask{ display: block; position: absolute; top: 0%; left: 0%; width: 100%; height: 100%; background-color: black; z-index:1001; -moz-opacity: 0.7; opacity:.70; filter: alpha(opacity=70);}
+.show{display: none; position: absolute; top: 0%; left: 0%; width: 100%; height: 100%;  z-index:1002; overflow: auto;}
+.page6 .join { position: absolute; top: 16.149vh; left: 0%;right: 0; width: 51.824vh; height: auto; margin: auto; z-index:1002; overflow: auto;}
+.page6 .popup .recur{ position: absolute; bottom:16vh; left: 0%;right: 0; width: 44.693VH;height: auto; margin: auto;  z-index:1002; overflow: auto;}
+.page6 .popup .receive-money{
+	position: absolute; top: 16.149vh; left: 0%;right: 0; width: 51.824vh; height: auto; margin: auto; z-index:1002;
+}
+.page6 .popup .money{
+	position: absolute;
+	top:0;
+	left: 0;
+}
+.page6 .popup .popup-close {
+	position: absolute;
+	top: 0;
+	right: 1px;
+	width: 23px;
+	height: 23px;
+	margin: auto;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: bold;
+	border: 2px solid #978870;
+	border-radius: 50%;
+	background-color: #fdfad8;
+	z-index:1002;
+	overflow: auto;
+	opacity: 0.5;
+	text-align: center;
+
+}
+.page7 .know {
+	position: absolute;
+	top:15.505vh;
+	right: 0;
+	left: 0;
+	width: 45.439vh;
+	height:  auto;
+	margin: auto;
+}
+.page7 .scanLife{
+	position: absolute;
+	right: 0;
+	bottom: 21.061vh;
+	left: 0;
+	width: 28.772vh;
+	height: auto;
+	margin: auto;
+}
+.share {
+	position: absolute;
+	right: 0;
+	bottom: 11.608vh;
+	left: 0;
+	width: 28.061vh;
+	height: auto;
+	margin: auto;
+}
+.page8 .share {
+	bottom: 17.608vh;
+}
+.page8 .ThinkChange_bg {
+	position: absolute;
+	right: 0;
+	bottom: 29.021vh;
+	left: 0;
+	width: 37.976vh;
+	height: auto;
+	margin: auto;
+}
+.page8 .ThinkChange {
+	position: absolute;
+	right: 0;
+	bottom: 46.434vh;
+	left: 0;
+	width: 27.114vh;
+	height: auto;
+	margin: auto;
+}
+
+.demo canvas{
+
+	background-repeat: no-repeat;
+	background-position: bottom;
+	/*background-size: 100%;*/
+
+}

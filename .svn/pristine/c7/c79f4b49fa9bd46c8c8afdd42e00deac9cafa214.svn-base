@@ -1,0 +1,133 @@
+<?php
+use app\modules\ejiaoyuandan2018\Asset;
+use yii\helpers\Url;
+
+$url = Url::home();
+$this->render('/layouts/_jsapi-share');
+?>
+    <input type="hidden" value="<?= $url . $this->context->module->id; ?>" id="data-module">
+    <div class="index">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="logo" src="<?= Asset::getAssetUrl('images/logo.png') ?>">
+                    <ul id="scene1">
+                        <li class="layer" data-depth="0.8"><img class="clould1" src="<?= Asset::getAssetUrl('images/clould1.png') ?>"></li>
+                        <li class="layer" data-depth="0.7"><img class="clould2" src="<?= Asset::getAssetUrl('images/clould2.png') ?>"></li>
+                        <li class="layer" data-depth="0.6"><img class="flower1" src="<?= Asset::getAssetUrl('images/flower7.png') ?>"></li>
+                        <li class="layer" data-depth="0.8"><img class="flower3" src="<?= Asset::getAssetUrl('images/flower6.png') ?>"></li>
+                        <li class="layer" data-depth="0.5"><img class="flower2" src="<?= Asset::getAssetUrl('images/flower2.png') ?>"></li>
+                        <li class="layer" data-depth="0.8"><img class="flower4" src="<?= Asset::getAssetUrl('images/flower3.png') ?>"></li>
+                        <li class="layer" data-depth="0.4"><img class="flower5" src="<?= Asset::getAssetUrl('images/flower4.png') ?>"></li>
+                        <li class="layer" data-depth="0.7"><img class="flower6" src="<?= Asset::getAssetUrl('images/flower8.png') ?>"></li>
+                        <li class="layer" data-depth="0.8"><img class="flower7" src="<?= Asset::getAssetUrl('images/flower3.png') ?>"></li>
+                        <li class="layer" data-depth="0.7"><img class="flower8" src="<?= Asset::getAssetUrl('images/flower1.png') ?>"></li>
+                    </ul>
+                    <img class="tree" src="<?= Asset::getAssetUrl('images/tree.png') ?>">
+                    <img class="card-bg" src="<?= Asset::getAssetUrl('images/card-bg.png') ?>">
+                    <img class="product" src="<?= Asset::getAssetUrl('images/product.png') ?>">
+                    <div class="text">
+                        <div class="l">
+                            <p class="text-xbmy s1 text-l3 ">2018的</p>
+                            <p class="text-blue text-xbmy s2 text-l2">第一份</p>
+                        </div>
+                        <p class="text-pink text-xbmy text-l1 r">好礼</p>
+                    </div>
+                    <p class="text-xbmy s3">辛苦一年，是时候滋补一下了！</p>
+                    <img class="icon-up shaking" src="<?= Asset::getAssetUrl('images/icon-up.png') ?>">
+                </div>
+                <div class="swiper-slide">
+                    <img class="logo" src="<?= Asset::getAssetUrl('images/logo.png') ?>">
+                    <ul id="scene2">
+                        <li class="layer" data-depth="0.5"><img class="clould1" src="<?= Asset::getAssetUrl('images/clould1.png') ?>"></li>
+                        <li class="layer" data-depth="0.7"><img class="clould2" src="<?= Asset::getAssetUrl('images/clould2.png') ?>"></li>
+                        <li class="layer" data-depth="0.6"><img class="clould3" src="<?= Asset::getAssetUrl('images/clould1.png') ?>"></li>
+                        <li class="layer" data-depth="0.3"><img class="flower1" src="<?= Asset::getAssetUrl('images/flower7.png') ?>"></li>
+                        <li class="layer" data-depth="0.6"><img class="flower2" src="<?= Asset::getAssetUrl('images/flower6.png') ?>"></li>
+                        <li class="layer" data-depth="0.1"><img class="flower3" src="<?= Asset::getAssetUrl('images/flower8.png') ?>"></li>
+                        <li class="layer" data-depth="0.4"><img class="flower4" src="<?= Asset::getAssetUrl('images/flower4.png') ?>"></li>
+                        <li class="layer" data-depth="0.3"><img class="flower5" src="<?= Asset::getAssetUrl('images/flower8.png') ?>"></li>
+                        <li class="layer" data-depth="0.2"><img class="flower6" src="<?= Asset::getAssetUrl('images/flower3.png') ?>"></li>
+                        <li class="layer" data-depth="0.3"><img class="flower7" src="<?= Asset::getAssetUrl('images/flower1.png') ?>"></li>
+                    </ul>
+                    <img class="envelope" src="<?= Asset::getAssetUrl('images/envelope.png') ?>">
+                    <img class="envelope-inner" src="<?= Asset::getAssetUrl('images/envelope-inner.png') ?>">
+                    <img class="btn-click" src="<?= Asset::getAssetUrl('images/btn-click.png') ?>">
+                    <img class="lace-l" src="<?= Asset::getAssetUrl('images/lace-l.png') ?>">
+                    <img class="lace-r" src="<?= Asset::getAssetUrl('images/lace-r.png') ?>">
+                    <img class="clould4" src="<?= Asset::getAssetUrl('images/clould3.png') ?>">
+                </div>
+                <div class="swiper-slide turntable" style="display: none">
+                    <img class="logo" src="<?= Asset::getAssetUrl('images/logo.png') ?>">
+                    <img class="turntable-panel" src="<?= Asset::getAssetUrl('images/turntable.png') ?>">
+                    <img class="btn-draw" src="<?= Asset::getAssetUrl('images/turntable-icon.png') ?>">
+                </div>
+                <div class="swiper-slide prize" style="display: none">
+                    <img class="logo" src="<?= Asset::getAssetUrl('images/logo.png') ?>">
+                    <div class="win">
+                        <h3 class="text-pink text-xbmy title">恭喜您获得</h3>
+                        <div class="prize1">
+                            <img class="prize-product" src="<?= Asset::getAssetUrl('images/prize1.png') ?>">
+                            <h3 class="text-center text-pink prize-name text-xbmy">果丹皮一袋</h3>
+                        </div>
+                        <div class="prize2" style="display: none">
+                            <img class="prize-product" src="<?= Asset::getAssetUrl('images/prize2.png') ?>">
+                            <h3 class="text-center text-pink prize-name text-xbmy">阿胶糕一盒</h3>
+                        </div>
+                        <div class="prize3" style="display: none">
+                            <img class="prize-product" src="<?= Asset::getAssetUrl('images/prize3.png') ?>">
+                            <h3 class="text-center text-pink prize-name text-xbmy">阿胶250g一盒</h3>
+                        </div>
+                        <div class="prize4" style="display: none">
+                            <img class="prize-product" src="<?= Asset::getAssetUrl('images/prize3.png') ?>">
+                            <h3 class="text-center text-pink prize-name text-xbmy">阿胶500g一盒</h3>
+                        </div>
+                        <img class="btn-get" src="<?= Asset::getAssetUrl('images/btn-get.png') ?>">
+                    </div>
+                    <div class="noWin">
+                        <h3 class="text-pink text-xbmy title text-center">祝福礼</h3>
+                        <h4 class="text-center text-xbmy sub-title">2018建议</h4>
+                        <h5 class="text-xbmy content1 content"style="display: none">不要总嘲笑上一辈人这么爱看养生，是因为他们已经开始感到体力不支~2018年多关心父母的身体健康……</h5>
+                        <h5 class="text-xbmy content2 content" style="display: none">做人要做听从自己的内心，做真正让自己快乐的事 …但前提是有助于健康的事。</h5>
+                        <h5 class="text-xbmy content3 content">新的一年，不期待突如其来的好运，只希望所有的努力终有回报…尤其是在减肥和健身这种事上！</h5>
+                        <img class="code" src="<?= Asset::getAssetUrl('images/code.jpg') ?>">
+                        <p class="text-center">扫码持续关注活动</p>
+                        <img class="btn-close" src="<?= Asset::getAssetUrl('images/btn-close.png') ?>">
+                    </div>
+                </div>
+                <div class="swiper-slide form" style="display: none">
+                    <img class="logo" src="<?= Asset::getAssetUrl('images/logo.png') ?>">
+                    <p class="text-pink text-xbmy title text-center">请输入快递可送达的地址</p>
+                    <form>
+                        <input type="text" placeholder="收件人" name="user_name">
+                        <input type="text" placeholder="电话" name="user_phone">
+                        <input type="text" placeholder="地址" name="user_address">
+                        <img class="btn-submit" src="<?= Asset::getAssetUrl('images/btn-submit.png') ?>">
+                    </form>
+                </div>
+                <div class="swiper-slide submitOK">
+                    <img class="logo" src="<?= Asset::getAssetUrl('images/logo.png') ?>">
+                    <h3 class="text-pink text-xbmy title text-center">提交成功</h3>
+                    <img class="code" src="<?= Asset::getAssetUrl('images/code.jpg') ?>">
+                    <h3 class="text-xbmy text-center">新年礼正在路上<br>扫码关注活动</h3>
+                </div>
+                <div class="swiper-slide backcover">
+                    <img class="logo" src="<?= Asset::getAssetUrl('images/logo.png') ?>">
+                    <img class="card-bg" src="<?= Asset::getAssetUrl('images/card-bg2.png') ?>">
+                    <p class="text-center text-xbmy text-pink s1">您健康<br> 家人才快乐！</p>
+                    <p class="text-center text-xbmy s2">2018，继续加油！</p>
+                    <img class="product" src="<?= Asset::getAssetUrl('images/product.png') ?>">
+                    <img class="btn-ejiao" src="<?= Asset::getAssetUrl('images/btn-ejiao.png') ?>">
+                    <img class="btn-share" src="<?= Asset::getAssetUrl('images/btn-share.png') ?>">
+                    <img class="mask-share transition" src="<?= Asset::getAssetUrl('images/mask-share.png') ?>"
+                         style="display: none">
+                    <div class="mask">
+                        <img class="code" src="<?= Asset::getAssetUrl('images/code.jpg') ?>">
+                        <img class="btn-close" src="<?= Asset::getAssetUrl('images/btn-close.png') ?>">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+

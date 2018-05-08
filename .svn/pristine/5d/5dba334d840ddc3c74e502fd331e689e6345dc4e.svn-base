@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>安牛元旦</title>
+    <meta name="viewport"
+          content="width=device-width,user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <!--强制竖屏-->
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="x5-page-mode" content="app">
+
+    <link rel="stylesheet" href="assets/css/index.min.css">
+
+</head>
+<body>
+<div class="home">
+    <img class="logo" src="assets/images/logo.png">
+    <ul id="scene">
+        <li class="layer" data-depth="0.3"><img class="light1 light transition" src="assets/images/light.png"></li>
+        <li class="layer" data-depth="0.6"><img class="light2 light transition" src="assets/images/light.png"></li>
+        <li class="layer" data-depth="0.2"><img class="clould-left" src="assets/images/clould-left.png"></li>
+        <li class="layer" data-depth="0.5"><img class="clould-right" src="assets/images/clould-right.png"></li>
+        <li class="layer" data-depth="0.5"><img class="tree-left" src="assets/images/tree-left.png"></li>
+        <li class="layer" data-depth="0.4"><img class="tree-right" src="assets/images/tree-right.png"></li>
+        <li class="layer" data-depth="0.6"><img class="clould" src="assets/images/clould.png"></li>
+    </ul>
+
+
+
+</div>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.rotate.min.js"></script>
+<script src="assets/js/index.js"></script>
+<script src="assets/js/parallax.js"></script>
+<script>
+    $('#scene').parallax({
+        calibrateX: false,
+        calibrateY: true,
+        invertX: false,
+        invertY: true,
+        limitX: false,
+        limitY: 10,
+        scalarX: 2,
+        scalarY: 8,
+        frictionX: 0.2,
+        frictionY: 0.8
+    });
+
+    $('.packet-header-front').click(function () {
+        $('.packet-header').addClass('flipped')
+    })
+</script>
+
+
+</body>
+</html>
